@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.rimurudev.sceneswitcher": {
+      "version": "https://github.com/RimuruDev/SceneSwitcher.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2581a8b9baf6c79841d51b54a69799aecb8d7e07"
+    },
     "com.unity.2d.animation": {
       "version": "9.0.4",
       "depth": 1,
