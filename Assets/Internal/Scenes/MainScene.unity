@@ -428,6 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 1683175611}
+  playerConfig: {fileID: 11400000, guid: 41d6b4e8bad6402439cc89271ed1654b, type: 2}
 --- !u!50 &1427492234
 Rigidbody2D:
   serializedVersion: 4
