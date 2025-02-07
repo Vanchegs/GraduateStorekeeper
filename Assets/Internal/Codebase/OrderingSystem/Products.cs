@@ -1,6 +1,6 @@
 namespace Internal.Codebase
 {
-    public enum Products
+    public enum ProductsType
     {
         Eggs,
         Milk,
