@@ -1,0 +1,32 @@
+using UnityEngine;
+
+namespace Internal.Codebase
+{
+    public class Order
+    {
+        public int timeToComplete;
+     
+        public Products[] OrderList { get; private set; }
+
+        private Order()
+        {
+            OrderList = new Products[Random.Range(1, 5)];
+
+            switch (OrderList.Length)
+            {
+                case 1:
+                    timeToComplete = 15;
+                    break;
+                case 2:
+                    timeToComplete = 20;
+                    break;
+                case 3:
+                    timeToComplete = 25;
+                    break;
+                case 4:
+                    timeToComplete = 30;
+                    break;
+            }
+        }
+    }
+}
