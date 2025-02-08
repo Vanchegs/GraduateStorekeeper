@@ -6,11 +6,11 @@ namespace Internal.Codebase
     {
         public int timeToComplete;
      
-        public ProductsType[] ProductsList { get; private set; }
+        public Product[] ProductsList { get; set; }
 
         public Order()
         {
-            ProductsList = new ProductsType[Random.Range(1, 5)];
+            ProductsList = new Product[Random.Range(1, 5)];
 
             switch (ProductsList.Length)
             {

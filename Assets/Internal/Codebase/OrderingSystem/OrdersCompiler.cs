@@ -5,7 +5,7 @@ namespace Internal.Codebase
     public class OrdersCompiler : MonoBehaviour
     {
         private Order order;
-        private ProductsType[] products;
+        private Product[] products;
 
         private void Start()
         {
@@ -18,9 +18,12 @@ namespace Internal.Codebase
         {
             order = new Order();
 
-            Product product = new Product();
-
-            Debug.Log(product.ProductType);
+            for (int i = 0; i < order.ProductsList.Length; i++)
+            {
+                order.ProductsList[i] = new Product();
+                
+                Debug.Log(order.ProductsList[i].ProductType);
+            }
         }
     }
 }
