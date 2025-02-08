@@ -10,7 +10,9 @@ namespace Internal.Codebase
         
         public ProductsType ProductType { get; private set; }
 
-        public Product() => 
+        public Product()
+        {
             ProductType = (ProductsType)Enum.GetValues(typeof(ProductsType)).GetValue(Random.Range(0, 18));
+        }
     }
 }
