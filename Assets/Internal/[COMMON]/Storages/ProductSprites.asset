@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae0d5e146b2a417d8a6b9de81c2beb17, type: 3}
   m_Name: ProductSprites
   m_EditorClassIdentifier: 
+  ProductSprites:
+    _serializedList: []

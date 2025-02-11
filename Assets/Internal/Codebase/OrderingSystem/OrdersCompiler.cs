@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Internal.Codebase
@@ -6,12 +7,13 @@ namespace Internal.Codebase
     {
         private Order order;
         private Product[] products;
+        private int waitingTime;
 
         private void Start()
         {
-            OrderCreate();
+            waitingTime = Random.Range(5, 30);
             
-            Debug.Log(order.ProductsList.Length);
+            StartCoroutine(TimeOrderingWaiting());
         }
 
         private void OrderCreate()
@@ -23,6 +25,20 @@ namespace Internal.Codebase
                 order.ProductsList[i] = new Product();
                 
                 Debug.Log(order.ProductsList[i].ProductType);
+            }
+            
+            Debug.Log(order.ProductsList.Length);
+        }
+
+        private IEnumerator TimeOrderingWaiting()
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(waitingTime);
+                
+                OrderCreate();
+                
+                waitingTime = Random.Range(10, 30);
             }
         }
     }
