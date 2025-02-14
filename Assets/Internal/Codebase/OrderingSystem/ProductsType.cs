@@ -8,7 +8,7 @@ namespace Internal.Codebase
         Water,
         Soda,
         Beer,
-        Crisps,
+        Сrackers,
         Rice,
         CannedGoods,
         Sweets,
