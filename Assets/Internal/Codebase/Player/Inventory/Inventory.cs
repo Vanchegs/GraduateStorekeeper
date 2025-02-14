@@ -1,21 +1,21 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace Internal.Codebase.Inventory
+namespace Internal.Codebase
 {
     public class Inventory
     {
-        public List<Product> inventory;
+        public List<Product> inventoryList;
         private const int maxInventorySize = 2;
 
         public Inventory() => 
-            inventory = new List<Product>();
+            inventoryList = new List<Product>();
 
-        private void AddItem(Product item)
+        public void AddProduct(Product item)
         {
-            if (inventory.Count < maxInventorySize)
+            if (inventoryList.Count < maxInventorySize)
             {
-                inventory.Add(item);
+                inventoryList.Add(item);
                 Debug.Log(item + " добавлен в инвентарь.");
             }
             else
@@ -24,11 +24,11 @@ namespace Internal.Codebase.Inventory
             }
         }
             
-        private void RemoveItem(Product item)
+        public void RemoveProduct(Product item)
         {
-            if (inventory.Contains(item))
+            if (inventoryList.Contains(item))
             {
-                inventory.Remove(item);
+                inventoryList.Remove(item);
                 Debug.Log(item + " удален из инвентаря.");
             }
             else
@@ -37,19 +37,19 @@ namespace Internal.Codebase.Inventory
             }
         }
 
-        private void RemoveAllItems() => 
-            inventory.Clear();
+        public void RemoveAllProducts() => 
+            inventoryList.Clear();
 
-        private void DisplayInventory()
+        public void DisplayInventory()
         {
-            if (inventory.Count == 0)
+            if (inventoryList.Count == 0)
             { 
                 Debug.Log("Инвентарь пуст.");
             }
             else
             {
                 Debug.Log("Содержимое инвентаря:");
-                foreach (Product item in inventory)
+                foreach (Product item in inventoryList)
                 { 
                     Debug.Log("- " + item.ProductType); 
                 }
