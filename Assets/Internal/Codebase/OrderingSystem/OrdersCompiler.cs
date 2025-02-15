@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -8,7 +7,6 @@ namespace Internal.Codebase
     public class OrdersCompiler : MonoBehaviour
     {
         private Order order;
-        private Product[] products;
         private int waitingTime;
 
         private void Start()
@@ -22,12 +20,9 @@ namespace Internal.Codebase
         {
             order = new Order();
 
-            foreach (var product in order.ProductsList)
-                product.ProductType = (ProductsType)Enum.GetValues(typeof(ProductsType)).GetValue(Random.Range(0, 18));
-
             for (int i = 0; i < order.ProductsList.Length; i++)
             {
-                order.ProductsList[i] = new Product();
+                order.ProductsList[i] = new OrderProduct();
                 
                 Debug.Log(order.ProductsList[i].ProductType);
             }

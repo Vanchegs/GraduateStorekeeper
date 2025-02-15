@@ -1,4 +1,4 @@
-using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Internal.Codebase
 {
@@ -6,11 +6,11 @@ namespace Internal.Codebase
     {
         public int timeToComplete;
      
-        public Product[] ProductsList { get; set; }
+        public OrderProduct[] ProductsList { get; private set; }
 
         public Order()
         {
-            ProductsList = new Product[Random.Range(1, 5)];
+            ProductsList = new OrderProduct[Random.Range(1, 5)];
 
             switch (ProductsList.Length)
             {
