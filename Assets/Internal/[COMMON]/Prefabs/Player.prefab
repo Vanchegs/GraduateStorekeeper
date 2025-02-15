@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1408932054374325782}
   - component: {fileID: 7384661558397919346}
   - component: {fileID: 3601144629608360433}
-  - component: {fileID: 4209045425782371916}
+  - component: {fileID: 1617117382032113620}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -107,7 +107,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4209045425782371916
+--- !u!114 &1617117382032113620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,11 +116,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1214984586052991809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e2757b7a745e554ab3228105c22a801, type: 3}
+  m_Script: {fileID: 11500000, guid: cbc3ae330ffd4ecc854e3a3d4ab059d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joystick: {fileID: 0}
-  playerConfig: {fileID: 11400000, guid: 41d6b4e8bad6402439cc89271ed1654b, type: 2}
+  mover:
+    joystick: {fileID: 0}
+    playerConfig: {fileID: 11400000, guid: 41d6b4e8bad6402439cc89271ed1654b, type: 2}
+    playerRb: {fileID: 0}
 --- !u!1 &6382886244776569082
 GameObject:
   m_ObjectHideFlags: 0

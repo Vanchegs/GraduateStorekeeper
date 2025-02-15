@@ -11,7 +11,7 @@ namespace Internal.Codebase
         public Inventory() => 
             inventoryList = new List<Product>();
 
-        public void AddProduct(Product item)
+        public void TakeProduct(Product item)
         {
             if (inventoryList.Count < maxInventorySize)
             {
@@ -24,7 +24,7 @@ namespace Internal.Codebase
             }
         }
             
-        public void RemoveProduct(Product item)
+        public void DiscardProduct(Product item)
         {
             if (inventoryList.Contains(item))
             {
@@ -37,7 +37,7 @@ namespace Internal.Codebase
             }
         }
 
-        public void RemoveAllProducts() => 
+        public void IssueTheProduct() => 
             inventoryList.Clear();
 
         public void DisplayInventory()

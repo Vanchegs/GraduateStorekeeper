@@ -1,18 +1,17 @@
+using System;
 using UnityEngine;
 
 namespace Internal.Codebase
 {
-    public class Move : MonoBehaviour
+    [Serializable]
+    public class Mover
     {
         [SerializeField] private Joystick joystick;
         [SerializeField] private PlayerConfig playerConfig;
-        
-        private Rigidbody2D playerRb;
+        [SerializeField] private Rigidbody2D playerRb;
     
         void Start()
         {
-            playerRb = GetComponent<Rigidbody2D>();
-
             if (joystick != null) 
                 Debug.Log("No joystick");
         }
