@@ -6,12 +6,12 @@ namespace Internal.Codebase
     {
         [SerializeField] private Mover mover;
         
-        private Inventory inventory;
+        public Inventory Inventory { get; private set; }
 
-        private void Start()
-        {
-            mover = new Mover();
-            inventory = new Inventory();
-        }
+        private void Start() => 
+            Inventory = new Inventory();
+
+        private void FixedUpdate() => 
+            mover.MovementControl();
     }
 }

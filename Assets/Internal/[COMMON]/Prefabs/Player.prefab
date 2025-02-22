@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1408932054374325782}
   - component: {fileID: 7384661558397919346}
   - component: {fileID: 3601144629608360433}
-  - component: {fileID: 1617117382032113620}
+  - component: {fileID: 1126333143758306084}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -107,7 +107,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1617117382032113620
+--- !u!114 &1126333143758306084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,7 +122,7 @@ MonoBehaviour:
   mover:
     joystick: {fileID: 0}
     playerConfig: {fileID: 11400000, guid: 41d6b4e8bad6402439cc89271ed1654b, type: 2}
-    playerRb: {fileID: 0}
+    playerRb: {fileID: 3601144629608360433}
 --- !u!1 &6382886244776569082
 GameObject:
   m_ObjectHideFlags: 0

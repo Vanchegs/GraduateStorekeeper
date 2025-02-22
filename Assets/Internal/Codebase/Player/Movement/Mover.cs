@@ -9,17 +9,8 @@ namespace Internal.Codebase
         [SerializeField] private Joystick joystick;
         [SerializeField] private PlayerConfig playerConfig;
         [SerializeField] private Rigidbody2D playerRb;
-    
-        void Start()
-        {
-            if (joystick != null) 
-                Debug.Log("No joystick");
-        }
 
-        void FixedUpdate() => 
-            MovementControl();
-
-        private void MovementControl() => 
+        public void MovementControl() => 
             playerRb.velocity = new Vector2(joystick.Horizontal * playerConfig.Speed, joystick.Vertical * playerConfig.Speed);
     }
 }
