@@ -8,6 +8,7 @@ namespace Internal.Codebase
     {
         private Order order;
         private int waitingTime;
+        private bool orderInProcess;
 
         private void Start()
         {
@@ -15,6 +16,9 @@ namespace Internal.Codebase
             
             StartCoroutine(TimeOrderingWaiting());
         }
+
+        public void ContinueGeneratingOrders() => 
+            orderInProcess = false;
 
         private void OrderCreate()
         {
@@ -26,6 +30,8 @@ namespace Internal.Codebase
                 
                 Debug.Log(order.ProductsList[i].ProductType);
             }
+
+            orderInProcess = true;
             
             Debug.Log(order.ProductsList.Length);
         }
