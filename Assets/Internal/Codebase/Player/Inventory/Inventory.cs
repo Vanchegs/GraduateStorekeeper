@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -5,7 +6,7 @@ namespace Internal.Codebase
 {
     public class Inventory
     {
-        public List<Product> inventoryList;
+        private List<Product> inventoryList;
         private const int maxInventorySize = 2;
 
         public Inventory() => 
@@ -39,6 +40,17 @@ namespace Internal.Codebase
 
         public void IssueTheProduct() => 
             inventoryList.Clear();
+
+        public bool CheckInventoryFull()
+        {
+            if (inventoryList.Count == maxInventorySize)
+                return true;
+
+            return false;
+        }
+
+        public List<Product> GetInventory() => 
+            inventoryList;
 
         public void DisplayInventory()
         {

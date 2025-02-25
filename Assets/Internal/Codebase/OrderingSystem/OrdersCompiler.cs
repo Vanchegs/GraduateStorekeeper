@@ -6,9 +6,11 @@ namespace Internal.Codebase
 {
     public class OrdersCompiler : MonoBehaviour
     {
-        private Order order;
+        
         private int waitingTime;
         private bool orderInProcess;
+        
+        public Order Order { get; private set; }
 
         private void Start()
         {
@@ -22,18 +24,18 @@ namespace Internal.Codebase
 
         private void OrderCreate()
         {
-            order = new Order();
+            Order = new Order();
 
-            for (int i = 0; i < order.ProductsList.Length; i++)
+            for (int i = 0; i < Order.ProductsList.Length; i++)
             {
-                order.ProductsList[i] = new OrderProduct();
+                Order.ProductsList[i] = new OrderProduct();
                 
-                Debug.Log(order.ProductsList[i].ProductType);
+                Debug.Log(Order.ProductsList[i].ProductType);
             }
 
             orderInProcess = true;
             
-            Debug.Log(order.ProductsList.Length);
+            Debug.Log(Order.ProductsList.Length);
         }
         
         private IEnumerator TimeOrderingWaiting()
