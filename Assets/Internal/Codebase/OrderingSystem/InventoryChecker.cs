@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Internal.Codebase;
 using UnityEngine;
@@ -14,13 +15,37 @@ public class InventoryChecker : MonoBehaviour
         if (playerInventory.CheckInventoryFull())
         {
             var inventory = playerInventory.GetInventory();
+            var orderProducts = ordersCompiler.Order.ProductsList.ToList();
+
+            RemoveMatchingItems(orderProducts, inventory);
             
-            bool areEqual = ordersCompiler.Order.ProductsList.Length == inventory.Count && 
-                            ordersCompiler.Order.ProductsList.GroupBy(x => x)
-                                .All(g => inventory.Count(x => x == g.Key) == g.Count());
-            
-            Debug.Log(areEqual);
+            Debug.Log("Оставшиеся элементы в заказах: " + string.Join(", ", orderProducts));
+            Debug.Log("Оставшиеся элементы в инвентаре: " + string.Join(", ", inventory));
         }
+    }
+
+    private void RemoveMatchingItems(List<OrderProduct> orderProducts, List<Product> inventory)
+    {
+        List<Product> itemsToRemoveFromOrders = new List<Product>();
+        List<Product> itemsToRemoveFromInventory = new List<Product>();
+
+        foreach (var item in inventory)
+        {
+            if (orderProducts.Contains(item))
+            {
+                itemsToRemoveFromOrders.Add(item);
+                itemsToRemoveFromInventory.Add(item);
+            }
+        }
+        
+        foreach (var product in itemsToRemoveFromOrders)
+        {
+            var item = (OrderProduct)product;
+            orderProducts.Remove(item);
+        }
+
+        foreach (var item in itemsToRemoveFromInventory) 
+            inventory.Remove(item);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,8 +53,8 @@ public class InventoryChecker : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             var player = other.GetComponent<PlayerComponent>();
-            
-            CheckInventory(player.Inventory);
+            if (player != null) 
+                CheckInventory(player.Inventory);
         }
     }
 }
