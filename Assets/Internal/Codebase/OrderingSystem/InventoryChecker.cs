@@ -12,16 +12,13 @@ public class InventoryChecker : MonoBehaviour
 
     private void CheckInventory(Inventory playerInventory)
     {
-        if (playerInventory.CheckInventoryFull())
-        {
-            var inventory = playerInventory.GetInventory();
-            var orderProducts = ordersCompiler.Order.ProductsList.ToList();
+        var inventory = playerInventory.GetInventory();
+        var orderProducts = ordersCompiler.Order.ProductsList.ToList();
 
-            RemoveMatchingItems(orderProducts, inventory);
+        RemoveMatchingItems(orderProducts, inventory);
             
-            Debug.Log("Оставшиеся элементы в заказах: " + string.Join(", ", orderProducts));
-            Debug.Log("Оставшиеся элементы в инвентаре: " + string.Join(", ", inventory));
-        }
+        Debug.Log("Оставшиеся элементы в заказах: " + string.Join(", ", orderProducts));
+        Debug.Log("Оставшиеся элементы в инвентаре: " + string.Join(", ", inventory));
     }
 
     private void RemoveMatchingItems(List<OrderProduct> orderProducts, List<Product> inventory)
@@ -48,13 +45,13 @@ public class InventoryChecker : MonoBehaviour
             inventory.Remove(item);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             var player = other.GetComponent<PlayerComponent>();
-            if (player != null) 
-                CheckInventory(player.Inventory);
+            if (player == null) return;
+            CheckInventory(player.Inventory);
         }
     }
 }
