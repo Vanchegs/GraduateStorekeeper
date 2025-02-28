@@ -5,14 +5,18 @@ using UnityEngine;
 
 public class InventoryChecker : MonoBehaviour
 {
-    private OrdersCompiler ordersCompiler;
-
-    private void Start() => 
-        ordersCompiler = GetComponent<OrdersCompiler>();
+    [SerializeField] private OrdersCompiler ordersCompiler;
 
     private void CheckInventory(Inventory playerInventory)
     {
         var inventory = playerInventory.GetInventory();
+        
+        if (ordersCompiler.Order == null)
+        {
+            Debug.Log("Заказа еще нет");
+            return;
+        }
+
         var orderProducts = ordersCompiler.Order.ProductsList.ToList();
 
         RemoveMatchingItems(orderProducts, inventory);
