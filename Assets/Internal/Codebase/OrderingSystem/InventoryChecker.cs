@@ -20,9 +20,12 @@ public class InventoryChecker : MonoBehaviour
         var orderProducts = ordersCompiler.Order.ProductsList.ToList();
 
         RemoveMatchingItems(orderProducts, inventory);
-            
-        Debug.Log("Оставшиеся элементы в заказах: " + string.Join(", ", orderProducts));
-        Debug.Log("Оставшиеся элементы в инвентаре: " + string.Join(", ", inventory));
+        
+        for (int i = 0; i < orderProducts.Count; i++)
+            Debug.Log("Оставшиеся элементы в заказах: " + string.Join(", ", orderProducts[i].ProductType));
+        
+        for (int i = 0; i < inventory.Count; i++)
+            Debug.Log("Оставшиеся элементы в инвентаре: " + string.Join(", ", inventory[i].ProductType));
     }
 
     private void RemoveMatchingItems(List<OrderProduct> orderProducts, List<Product> inventory)
