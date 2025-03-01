@@ -6,21 +6,22 @@ namespace Internal.Codebase
 {
     public class OrdersCompiler : MonoBehaviour
     {
-        
         private int waitingTime;
-        private bool orderInProcess;
+        private bool orderCompleted;
         
         public Order Order { get; private set; }
 
         private void Start()
         {
+            orderCompleted = true;
+            
             waitingTime = Random.Range(5, 30);
             
             StartCoroutine(TimeOrderingWaiting());
         }
 
-        public void ContinueGeneratingOrders() => 
-            orderInProcess = false;
+        public void CompletedOrder() => 
+            orderCompleted = true;
 
         private void OrderCreate()
         {
@@ -33,7 +34,7 @@ namespace Internal.Codebase
                 Debug.Log(Order.ProductsList[i].ProductType);
             }
 
-            orderInProcess = true;
+            orderCompleted = false;
             
             Debug.Log(Order.ProductsList.Length);
         }
@@ -43,10 +44,12 @@ namespace Internal.Codebase
             while (true)
             {
                 yield return new WaitForSeconds(waitingTime);
-                
-                OrderCreate();
-                
-                waitingTime = Random.Range(10, 30);
+
+                if (orderCompleted)
+                {
+                    OrderCreate();
+                    waitingTime = Random.Range(10, 30);
+                }
             }
         }
     }
