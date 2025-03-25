@@ -4,8 +4,7 @@ namespace Internal.Codebase
 {
     public class Order
     {
-        public int timeToComplete;
-     
+        public int TimeToComplete { get; private set; }
         public OrderProduct[] ProductsList { get; private set; }
 
         public Order()
@@ -15,16 +14,16 @@ namespace Internal.Codebase
             switch (ProductsList.Length)
             {
                 case 1:
-                    timeToComplete = 15;
+                    TimeToComplete = 15;
                     break;
                 case 2:
-                    timeToComplete = 20;
+                    TimeToComplete = 20;
                     break;
                 case 3:
-                    timeToComplete = 25;
+                    TimeToComplete = 25;
                     break;
                 case 4:
-                    timeToComplete = 30;
+                    TimeToComplete = 30;
                     break;
             }
         }

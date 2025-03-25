@@ -9,5 +9,8 @@ namespace Internal.Codebase
         private Sprite productSprite;
         
         [field: SerializeField] public ProductsType ProductType { get; set; }
+        
+        public void SetProductSprites(ProductSpritesStorage productSprites) => 
+            productSprite = productSprites.ProductSprites[ProductType];
     }
 }
