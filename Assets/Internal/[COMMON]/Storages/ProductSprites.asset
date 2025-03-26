@@ -43,9 +43,9 @@ MonoBehaviour:
     - Key: 5
       Value: {fileID: -1938505829, guid: b45198bd23594944c875b8b922165596, type: 3}
     - Key: 6
-      Value: {fileID: 0}
+      Value: {fileID: -1118278606, guid: 727fd48003a17eb43bff5697a27b2ce4, type: 3}
     - Key: 7
-      Value: {fileID: 0}
+      Value: {fileID: 2025608949, guid: 727fd48003a17eb43bff5697a27b2ce4, type: 3}
     - Key: 8
       Value: {fileID: -1704542494, guid: b45198bd23594944c875b8b922165596, type: 3}
     - Key: 9
