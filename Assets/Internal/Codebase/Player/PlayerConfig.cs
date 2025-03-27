@@ -6,5 +6,6 @@ namespace Internal.Codebase
     public class PlayerConfig : ScriptableObject
     {
         public float Speed;
+        public Sprite playerSprite;
     }
 }

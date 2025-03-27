@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: PlayerConfig
   m_EditorClassIdentifier: 
   Speed: 3
+  playerSprite: {fileID: 1389241642, guid: b45198bd23594944c875b8b922165596, type: 3}
