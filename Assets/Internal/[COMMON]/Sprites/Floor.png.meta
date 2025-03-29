@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8b3d2751fbd76ff4a96847ce63a43f4f
+guid: 030f59a87f1f3b241bc62507c997c849
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_0
+      name: Floor_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 700
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187ee2620d1f3cd46970ab933c95db76
+      internalID: 1772755488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_1
       rect:
         serializedVersion: 2
         x: 10
@@ -150,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30f488b8d38584c44a43f1564c63ec38
-      internalID: 2009960762
+      spriteID: f9b50adeff7360d4eb4a562546d9f27d
+      internalID: 218443966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: background_1
+      name: Floor_3
       rect:
         serializedVersion: 2
         x: 225
         y: 498
-        width: 91
-        height: 46
+        width: 92
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20c1477e6ddef084aa733cc1318c1880
-      internalID: 1121100397
+      spriteID: 1b10c157fb3a9e84bbaab39b16f529bb
+      internalID: -1108386036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: background_2
+      name: Floor_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 24
-        width: 700
-        height: 469
+        x: 465
+        y: 495
+        width: 45
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ad677932c2f5ee43a87ffd37b218c67
-      internalID: 1058859853
+      spriteID: afb4559eafbe3fa4da30844843acc3c6
+      internalID: -2044282635
       vertices: []
       indices: 
       edges: []
@@ -209,9 +230,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      background_0: 2009960762
-      background_1: 1121100397
-      background_2: 1058859853
+      Floor_0: 1772755488
+      Floor_1: 218443966
+      Floor_2: 1668143761
+      Floor_3: -1108386036
+      Floor_4: -2044282635
+      Floor_5: -31235943
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
