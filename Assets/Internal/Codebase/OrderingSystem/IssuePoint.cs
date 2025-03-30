@@ -4,7 +4,7 @@ namespace Internal.Codebase
 {
     public class IssuePoint : MonoBehaviour
     {
-        [SerializeField] private Product product;
+        [field: SerializeField] public Product Product { get; private set; }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
@@ -13,7 +13,7 @@ namespace Internal.Codebase
                 var player = other.GetComponent<PlayerComponent>();
 
                 if (player != null) 
-                    player.Inventory.TakeProduct(product);
+                    player.Inventory.TakeProduct(Product);
 
                 player.Inventory.DisplayInventory();
             }
