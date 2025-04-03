@@ -21,6 +21,9 @@ public class InventoryChecker : MonoBehaviour
 
         RemoveMatchingItems(orderProducts, inventory);
         
+        playerInventory.ChangeInventory(inventory);
+        ordersCompiler.Order.ChangeOrder(orderProducts);
+        
         for (int i = 0; i < orderProducts.Count; i++)
             Debug.Log("Оставшиеся элементы в заказах: " + string.Join(", ", orderProducts[i].ProductType));
         

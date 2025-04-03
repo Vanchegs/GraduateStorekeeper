@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Random = UnityEngine.Random;
 
 namespace Internal.Codebase
@@ -26,6 +27,11 @@ namespace Internal.Codebase
                     TimeToComplete = 30;
                     break;
             }
+        }
+
+        public void ChangeOrder(List<OrderProduct> changedOrder)
+        {
+            ProductsList = changedOrder.ToArray();
         }
     }
 }

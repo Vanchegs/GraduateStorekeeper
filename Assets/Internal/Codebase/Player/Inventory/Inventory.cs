@@ -51,6 +51,9 @@ namespace Internal.Codebase
         public List<Product> GetInventory() => 
             inventoryList;
 
+        public void ChangeInventory(List<Product> changedInventory) => 
+            inventoryList = changedInventory;
+
         public void DisplayInventory()
         {
             if (inventoryList.Count == 0)
