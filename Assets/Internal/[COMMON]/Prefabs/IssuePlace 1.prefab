@@ -119,7 +119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1764177655966492020
 RectTransform:
   m_ObjectHideFlags: 0
@@ -194,7 +194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1086966305221366697
 RectTransform:
   m_ObjectHideFlags: 0
@@ -409,6 +409,7 @@ GameObject:
   - component: {fileID: 8217044670827879708}
   - component: {fileID: 4085660929617172090}
   - component: {fileID: 5390249428357904819}
+  - component: {fileID: 8352596188360884491}
   m_Layer: 5
   m_Name: InventoryPanel
   m_TagString: Untagged
@@ -477,6 +478,24 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8352596188360884491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8623661647012390087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a675ddd9f3c414e99a59fc70a67667a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  images:
+  - {fileID: 7062044958866345608}
+  - {fileID: 1455898273601023600}
+  - {fileID: 2081787177025787769}
+  - {fileID: 4151232220010768204}
+  ordersCompiler: {fileID: 3151573679286169732}
 --- !u!1 &8631715193097303756
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3966161262786336829
 RectTransform:
   m_ObjectHideFlags: 0
@@ -569,7 +588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3163657099654373108
 RectTransform:
   m_ObjectHideFlags: 0

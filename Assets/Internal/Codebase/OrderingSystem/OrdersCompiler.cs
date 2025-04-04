@@ -1,4 +1,5 @@
 using System.Collections;
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -34,6 +35,8 @@ namespace Internal.Codebase
                 Debug.Log(Order.ProductsList[i].ProductType);
             }
 
+            GameEventBus.OnOrderCreate?.Invoke();
+            
             orderCompleted = false;
             
             Debug.Log(Order.ProductsList.Length);
