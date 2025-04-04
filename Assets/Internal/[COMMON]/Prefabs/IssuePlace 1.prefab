@@ -496,6 +496,7 @@ MonoBehaviour:
   - {fileID: 2081787177025787769}
   - {fileID: 4151232220010768204}
   ordersCompiler: {fileID: 3151573679286169732}
+  spritesStorage: {fileID: 11400000, guid: 9bbc9cc0d32340f4593e055511b08696, type: 2}
 --- !u!1 &8631715193097303756
 GameObject:
   m_ObjectHideFlags: 0

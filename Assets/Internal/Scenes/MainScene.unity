@@ -225,6 +225,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1408932054374325782, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
   m_PrefabInstance: {fileID: 2108783529}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &378557847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 378557850}
+  - component: {fileID: 378557849}
+  - component: {fileID: 378557848}
+  m_Layer: 0
+  m_Name: System
+  m_TagString: DontDestroyObject
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &378557848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378557847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 409f42bef2134b7d944c3f66b9c1ddb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &378557849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378557847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a149aaaa031445cb91e5fd4965976fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &378557850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378557847}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,6 +863,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8118758764849447517, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00002503395
+      objectReference: {fileID: 0}
     - target: {fileID: 8720493650439749010, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -1244,3 +1305,4 @@ SceneRoots:
   - {fileID: 2073213752}
   - {fileID: 2108783529}
   - {fileID: 1810615232}
+  - {fileID: 378557850}

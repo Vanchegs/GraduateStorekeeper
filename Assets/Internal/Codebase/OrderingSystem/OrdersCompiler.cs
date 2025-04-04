@@ -34,8 +34,6 @@ namespace Internal.Codebase
                 
                 Debug.Log(Order.ProductsList[i].ProductType);
             }
-
-            GameEventBus.OnOrderCreate?.Invoke();
             
             orderCompleted = false;
             
@@ -51,6 +49,7 @@ namespace Internal.Codebase
                 if (orderCompleted)
                 {
                     OrderCreate();
+                    GameEventBus.OnOrderCreate?.Invoke();
                     waitingTime = Random.Range(10, 30);
                 }
             }
