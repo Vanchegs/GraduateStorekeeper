@@ -6,11 +6,11 @@ namespace Internal.Codebase
     [Serializable]
     public class Product
     {
-        private Sprite productSprite;
+        public Sprite ProductSprite { get; private set; }
         
         [field: SerializeField] public ProductsType ProductType { get; set; }
         
         public void SetProductSprites(ProductSpritesStorage productSprites) => 
-            productSprite = productSprites.ProductSprites[ProductType];
+            ProductSprite = productSprites.ProductSprites[ProductType];
     }
 }

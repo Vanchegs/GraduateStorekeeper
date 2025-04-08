@@ -7,6 +7,8 @@ namespace Internal.Codebase
 {
     public class OrdersCompiler : MonoBehaviour
     {
+        [SerializeField] private IssueTableProductDisplay tableProductDisplay;
+        
         private int waitingTime;
         private bool orderCompleted;
         
@@ -16,28 +18,21 @@ namespace Internal.Codebase
         {
             orderCompleted = true;
             
-            waitingTime = Random.Range(5, 30);
+            waitingTime = Random.Range(10, 30);
             
             StartCoroutine(TimeOrderingWaiting());
         }
-
-        public void CompletedOrder() => 
-            orderCompleted = true;
 
         private void OrderCreate()
         {
             Order = new Order();
 
-            for (int i = 0; i < Order.ProductsList.Length; i++)
-            {
+            for (int i = 0; i < Order.ProductsList.Length; i++) 
                 Order.ProductsList[i] = new OrderProduct();
-                
-                Debug.Log(Order.ProductsList[i].ProductType);
-            }
-            
+
             orderCompleted = false;
-            
-            Debug.Log(Order.ProductsList.Length);
+         
+            tableProductDisplay.DisplayOrder();
         }
         
         private IEnumerator TimeOrderingWaiting()
@@ -49,7 +44,7 @@ namespace Internal.Codebase
                 if (orderCompleted)
                 {
                     OrderCreate();
-                    GameEventBus.OnOrderCreate?.Invoke();
+                    
                     waitingTime = Random.Range(10, 30);
                 }
             }
