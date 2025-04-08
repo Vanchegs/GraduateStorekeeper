@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Internal.Codebase;
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
 public class InventoryChecker : MonoBehaviour
@@ -64,6 +65,7 @@ public class InventoryChecker : MonoBehaviour
             var player = other.GetComponent<PlayerComponent>();
             if (player == null) return;
             CheckInventory(player.Inventory);
+            GameEventBus.UpdateOrderDisplay.Invoke();
         }
     }
 }

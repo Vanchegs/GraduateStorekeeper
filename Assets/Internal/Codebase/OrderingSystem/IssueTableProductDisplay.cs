@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +19,12 @@ namespace Internal.Codebase
             if (ordersCompiler == null) 
                 ordersCompiler = FindObjectOfType<OrdersCompiler>();
         }
+
+        private void OnEnable() => 
+            GameEventBus.UpdateOrderDisplay += DisplayOrder;
+
+        private void OnDisable() => 
+            GameEventBus.UpdateOrderDisplay -= DisplayOrder;
 
         public void DisplayOrder()
         {
