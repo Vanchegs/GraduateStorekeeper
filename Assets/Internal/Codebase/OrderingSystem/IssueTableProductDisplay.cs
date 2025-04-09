@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Internal.Codebase.Infrastructure;
 using UnityEngine;
@@ -39,6 +38,7 @@ namespace Internal.Codebase
                         images[i].gameObject.SetActive(true); 
                         products[i].SetProductSprites(spritesStorage); 
                         images[i].sprite = products[i].ProductSprite;
+                        images[i].preserveAspect = true;
                     }
                     else 
                     { 
@@ -46,7 +46,6 @@ namespace Internal.Codebase
                     }
                 }
             }
-            
         }
     }
 }
