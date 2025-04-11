@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Internal.Codebase.Infrastructure;
 
 namespace Internal.Codebase
 {
@@ -16,11 +17,7 @@ namespace Internal.Codebase
             if (inventoryList.Count < maxInventorySize)
             {
                 inventoryList.Add(item);
-                Debug.Log(item + " добавлен в инвентарь.");
-            }
-            else
-            { 
-                Debug.Log("Инвентарь полон! Нельзя добавить " + item + ".");
+                GameEventBus.UpdateInventoryDisplay.Invoke();
             }
         }
             
@@ -29,16 +26,15 @@ namespace Internal.Codebase
             if (inventoryList.Contains(item))
             {
                 inventoryList.Remove(item);
-                Debug.Log(item + " удален из инвентаря.");
-            }
-            else
-            {
-                Debug.Log(item + " не найден в инвентаре.");
+                GameEventBus.UpdateInventoryDisplay.Invoke();
             }
         }
 
-        public void IssueTheProduct() => 
+        public void IssueTheProduct()
+        {
             inventoryList.Clear();
+            GameEventBus.UpdateInventoryDisplay.Invoke();
+        }
 
         public bool CheckInventoryFull()
         {
@@ -51,23 +47,10 @@ namespace Internal.Codebase
         public List<Product> GetInventory() => 
             inventoryList;
 
-        public void ChangeInventory(List<Product> changedInventory) => 
-            inventoryList = changedInventory;
-
-        public void DisplayInventory()
+        public void ChangeInventory(List<Product> changedInventory)
         {
-            if (inventoryList.Count == 0)
-            { 
-                Debug.Log("Инвентарь пуст.");
-            }
-            else
-            {
-                Debug.Log("Содержимое инвентаря:");
-                foreach (Product item in inventoryList)
-                { 
-                    Debug.Log("- " + item.ProductType); 
-                }
-            }
+            inventoryList = changedInventory;
+            GameEventBus.UpdateInventoryDisplay.Invoke();
         }
     }
 }
