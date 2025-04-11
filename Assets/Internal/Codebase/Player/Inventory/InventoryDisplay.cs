@@ -28,8 +28,8 @@ public class InventoryDisplay : MonoBehaviour
                 if (i < inventoryList.Count && inventoryList[i] != null) 
                 { 
                     images[i].gameObject.SetActive(true); 
-                    inventoryList[i].SetProductSprites(spritesStorage); 
-                    //images[i].sprite = products[i].ProductSprite;
+                    inventoryList[i].SetProductSprites(spritesStorage);
+                    images[i].sprite = spritesStorage.ProductSprites[inventoryList[i].ProductType];
                     images[i].preserveAspect = true;
                 }
                 else 
