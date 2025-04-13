@@ -21,6 +21,6 @@ namespace Internal.Codebase
         }
 
         private void FixedUpdate() => 
-            mover.MovementControl();
+            mover.MovementControl(sprite);
     }
 }

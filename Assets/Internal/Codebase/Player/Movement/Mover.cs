@@ -10,7 +10,12 @@ namespace Internal.Codebase
         [SerializeField] private PlayerConfig playerConfig;
         [SerializeField] private Rigidbody2D playerRb;
 
-        public void MovementControl() => 
-            playerRb.velocity = new Vector2(joystick.Horizontal * playerConfig.Speed, joystick.Vertical * playerConfig.Speed);
+        public void MovementControl(SpriteRenderer playerSprite)
+        {
+            playerRb.velocity = new Vector2(joystick.Horizontal * playerConfig.Speed,
+                joystick.Vertical * playerConfig.Speed);
+
+            playerSprite.flipX = joystick.Direction.x > 0;
+        }
     }
 }
