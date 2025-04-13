@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7384661558397919346}
   - component: {fileID: 3601144629608360433}
   - component: {fileID: 1126333143758306084}
-  - component: {fileID: 5385253532590103795}
+  - component: {fileID: 2512591438420751838}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -178,7 +178,7 @@ MonoBehaviour:
     playerConfig: {fileID: 11400000, guid: 41d6b4e8bad6402439cc89271ed1654b, type: 2}
     playerRb: {fileID: 3601144629608360433}
   playerConfig: {fileID: 11400000, guid: 41d6b4e8bad6402439cc89271ed1654b, type: 2}
---- !u!95 &5385253532590103795
+--- !u!95 &2512591438420751838
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -188,7 +188,7 @@ Animator:
   m_GameObject: {fileID: 1214984586052991809}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a97d40ed62ae7642887e7d1f593d104, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

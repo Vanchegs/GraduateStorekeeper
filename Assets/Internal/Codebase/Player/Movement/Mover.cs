@@ -15,7 +15,7 @@ namespace Internal.Codebase
             playerRb.velocity = new Vector2(joystick.Horizontal * playerConfig.Speed,
                 joystick.Vertical * playerConfig.Speed);
 
-            playerSprite.flipX = joystick.Direction.x > 0;
+            playerSprite.flipX = joystick.Direction.x < 0;
         }
     }
 }
