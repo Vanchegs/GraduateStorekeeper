@@ -6,6 +6,7 @@ namespace Internal.Codebase
     {
         [SerializeField] private Mover mover;
         [SerializeField] private PlayerConfig playerConfig;
+        [SerializeField] private Animator animator;
         
         private SpriteRenderer sprite; 
             
@@ -21,6 +22,6 @@ namespace Internal.Codebase
         }
 
         private void FixedUpdate() => 
-            mover.MovementControl(sprite);
+            mover.MovementControl(sprite, animator);
     }
 }

@@ -812,6 +812,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1126333143758306084, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2108783530}
+    - target: {fileID: 1126333143758306084, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
       propertyPath: mover.joystick
       value: 
       objectReference: {fileID: 1683175611}
@@ -887,6 +891,34 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: cc700d46893a7eb40b19ca85074a0068, type: 2}
+    - target: {fileID: 7384661558397919346, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384661558397919346, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384661558397919346, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384661558397919346, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384661558397919346, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384661558397919346, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384661558397919346, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8118758764849447517, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.00002503395
@@ -900,6 +932,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
+--- !u!95 &2108783530 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2512591438420751838, guid: d6d278f54dfc9b44a8f7e4bf5e8b9866, type: 3}
+  m_PrefabInstance: {fileID: 2108783529}
+  m_PrefabAsset: {fileID: 0}
 --- !u!60 &2049499021976513996 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 5656557070211494873, guid: 99317fb8102ed8a4289b2b8b11746ed1, type: 3}
