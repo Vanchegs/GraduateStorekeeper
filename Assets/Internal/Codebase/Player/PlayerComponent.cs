@@ -8,10 +8,11 @@ namespace Internal.Codebase
         [SerializeField] private PlayerConfig playerConfig;
         [SerializeField] private Animator animator;
         
-        private SpriteRenderer sprite; 
+        private SpriteRenderer sprite;
             
         public Inventory Inventory { get; private set; }
-
+        public Wallet Wallet { get; private set; } = new();
+        
         private void Start()
         {
             sprite = GetComponent<SpriteRenderer>();

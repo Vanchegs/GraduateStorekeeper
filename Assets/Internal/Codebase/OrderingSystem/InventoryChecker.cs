@@ -8,7 +8,7 @@ public class InventoryChecker : MonoBehaviour
 {
     [SerializeField] private OrdersCompiler ordersCompiler;
 
-    private void CheckInventory(Inventory playerInventory)
+    private void CheckInventory(Inventory playerInventory, Wallet wallet)
     {
         var inventory = playerInventory.GetInventory();
         
@@ -24,12 +24,13 @@ public class InventoryChecker : MonoBehaviour
         
         playerInventory.ChangeInventory(inventory);
         ordersCompiler.Order.ChangeOrder(orderProducts);
-        
-        for (int i = 0; i < orderProducts.Count; i++)
-            Debug.Log("Оставшиеся элементы в заказах: " + string.Join(", ", orderProducts[i].ProductType));
-        
-        for (int i = 0; i < inventory.Count; i++)
-            Debug.Log("Оставшиеся элементы в инвентаре: " + string.Join(", ", inventory[i].ProductType));
+
+        if (orderProducts.Count == 0)
+        {
+            ordersCompiler.OrderComplete();
+            wallet.ChargeToWallet(ordersCompiler.Order.OrderPrice);
+            
+        }
     }
 
     private void RemoveMatchingItems(List<OrderProduct> orderProducts, List<Product> inventory)
@@ -64,7 +65,7 @@ public class InventoryChecker : MonoBehaviour
         {
             var player = other.GetComponent<PlayerComponent>();
             if (player == null) return;
-            CheckInventory(player.Inventory);
+            CheckInventory(player.Inventory, player.Wallet);
             GameEventBus.UpdateOrderDisplay.Invoke();
         }
     }

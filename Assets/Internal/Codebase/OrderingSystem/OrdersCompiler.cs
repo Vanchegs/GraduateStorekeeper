@@ -10,13 +10,13 @@ namespace Internal.Codebase
         [SerializeField] private IssueTableProductDisplay tableProductDisplay;
         
         private int waitingTime;
-        private bool orderCompleted;
+        private bool isOrderCompleted;
         
         public Order Order { get; private set; }
 
         private void Start()
         {
-            orderCompleted = true;
+            isOrderCompleted = true;
             
             waitingTime = Random.Range(10, 30);
             
@@ -30,18 +30,21 @@ namespace Internal.Codebase
             for (int i = 0; i < Order.ProductsList.Length; i++) 
                 Order.ProductsList[i] = new OrderProduct();
 
-            orderCompleted = false;
+            isOrderCompleted = false;
          
             tableProductDisplay.DisplayOrder();
         }
-        
+
+        public void OrderComplete() => 
+            isOrderCompleted = true;
+
         private IEnumerator TimeOrderingWaiting()
         {
             while (true)
             {
                 yield return new WaitForSeconds(waitingTime);
 
-                if (orderCompleted)
+                if (isOrderCompleted)
                 {
                     OrderCreate();
                     
