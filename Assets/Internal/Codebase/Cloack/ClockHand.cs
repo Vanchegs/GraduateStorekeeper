@@ -1,12 +1,13 @@
 using UnityEngine;
 using DG.Tweening;
+using Internal.Codebase.UILogic.StoreLogic;
 
-public class LeftPivotClockHand : MonoBehaviour
+public class ClockHand : MonoBehaviour
 {
-    [Header("Settings")]
-    [SerializeField] private float rotationDuration = 0.5f;
-    [SerializeField] private Ease easeType = Ease.OutElastic;
-    [SerializeField] private bool smoothMovement = true;
+    // [Header("Settings")]
+    // [SerializeField] private float rotationDuration = 0.5f;
+    // [SerializeField] private Ease easeType = Ease.OutElastic;
+    // [SerializeField] private bool smoothMovement = true;
     
     private RectTransform rectTransform;
     private Vector2 originalPivot;
@@ -22,7 +23,7 @@ public class LeftPivotClockHand : MonoBehaviour
 
     private void Start() => 
         StartContinuousRotation(180);
-    
+
     public void StartContinuousRotation(float secondsPerRotation)
     {
         transform.rotation = Quaternion.identity;
@@ -34,9 +35,7 @@ public class LeftPivotClockHand : MonoBehaviour
     
     private void OnDisable()
     {
-        if (rectTransform != null)
-        {
+        if (rectTransform != null) 
             rectTransform.pivot = originalPivot;
-        }
     }
 }
