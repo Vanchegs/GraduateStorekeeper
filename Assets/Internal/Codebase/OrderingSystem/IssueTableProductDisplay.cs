@@ -27,23 +27,22 @@ namespace Internal.Codebase
 
         public void DisplayOrder()
         {
-            if (ordersCompiler.Order.ProductsList != null)
-            {
-                var products = ordersCompiler.Order.ProductsList;
+            if (ordersCompiler.Order.ProductsList == null) return;
+            
+            var products = ordersCompiler.Order.ProductsList;
                 
-                for (int i = 0; i < images.Count; i++) 
+            for (int i = 0; i < images.Count; i++) 
+            { 
+                if (i < products.Length && products[i] != null) 
                 { 
-                    if (i < products.Length && products[i] != null) 
-                    { 
-                        images[i].gameObject.SetActive(true); 
-                        products[i].SetProductSprites(spritesStorage); 
-                        images[i].sprite = products[i].ProductSprite;
-                        images[i].preserveAspect = true;
-                    }
-                    else 
-                    { 
-                        images[i].gameObject.SetActive(false);
-                    }
+                    images[i].gameObject.SetActive(true); 
+                    products[i].SetProductSprites(spritesStorage); 
+                    images[i].sprite = products[i].ProductSprite;
+                    images[i].preserveAspect = true;
+                }
+                else 
+                { 
+                    images[i].gameObject.SetActive(false);
                 }
             }
         }

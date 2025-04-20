@@ -20,17 +20,17 @@ public class InventoryChecker : MonoBehaviour
 
         var orderProducts = ordersCompiler.Order.ProductsList.ToList();
 
-        RemoveMatchingItems(orderProducts, inventory);
-        
-        playerInventory.ChangeInventory(inventory);
-        ordersCompiler.Order.ChangeOrder(orderProducts);
-
         if (orderProducts.Count == 0)
         {
             ordersCompiler.OrderComplete();
             wallet.ChargeToWallet(ordersCompiler.Order.OrderPrice);
-            
+            return;
         }
+
+        RemoveMatchingItems(orderProducts, inventory);
+
+        playerInventory.ChangeInventory(inventory);
+        ordersCompiler.Order.ChangeOrder(orderProducts);
     }
 
     private void RemoveMatchingItems(List<OrderProduct> orderProducts, List<Product> inventory)
@@ -65,7 +65,9 @@ public class InventoryChecker : MonoBehaviour
         {
             var player = other.GetComponent<PlayerComponent>();
             if (player == null) return;
-            CheckInventory(player.Inventory, player.Wallet);
+            CheckInventory(player.Inventory, player.Wallet); 
+            if (ordersCompiler.Order == null)
+                return;
             GameEventBus.UpdateOrderDisplay.Invoke();
         }
     }
