@@ -20,10 +20,8 @@ namespace Internal.Codebase
             walletText.text = player.Wallet.PlayerWallet.ToString();
         }
 
-        private void OnEnable()
-        {
+        private void OnEnable() => 
             GameEventBus.UpdateWalletUI += UpdateWallet;
-        }
 
         private void OnDisable() => 
             GameEventBus.UpdateWalletUI -= UpdateWallet;

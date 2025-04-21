@@ -19,16 +19,16 @@ public class InventoryChecker : MonoBehaviour
         }
 
         var orderProducts = ordersCompiler.Order.ProductsList.ToList();
-
+        
+        RemoveMatchingItems(orderProducts, inventory);
+        
+        
         if (orderProducts.Count == 0)
         {
             ordersCompiler.OrderComplete();
             wallet.ChargeToWallet(ordersCompiler.Order.OrderPrice);
-            return;
         }
-
-        RemoveMatchingItems(orderProducts, inventory);
-
+        
         playerInventory.ChangeInventory(inventory);
         ordersCompiler.Order.ChangeOrder(orderProducts);
     }
@@ -64,9 +64,8 @@ public class InventoryChecker : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             var player = other.GetComponent<PlayerComponent>();
-            if (player == null) return;
-            CheckInventory(player.Inventory, player.Wallet); 
-            if (ordersCompiler.Order == null)
+            CheckInventory(player.Inventory, player.Wallet);
+            if (ordersCompiler.Order == null) 
                 return;
             GameEventBus.UpdateOrderDisplay.Invoke();
         }

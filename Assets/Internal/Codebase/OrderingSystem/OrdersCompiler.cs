@@ -1,5 +1,4 @@
 using System.Collections;
-using Internal.Codebase.Infrastructure;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -18,7 +17,7 @@ namespace Internal.Codebase
         {
             isOrderCompleted = true;
             
-            waitingTime = Random.Range(10, 30);
+            waitingTime = Random.Range(5, 10);
             
             StartCoroutine(TimeOrderingWaiting());
         }
@@ -26,9 +25,13 @@ namespace Internal.Codebase
         private void OrderCreate()
         {
             Order = new Order();
-
+            
             for (int i = 0; i < Order.ProductsList.Length; i++) 
                 Order.ProductsList[i] = new OrderProduct();
+
+            RecountingWaitingTime();
+            
+            Order.CountingOrderPrice();
 
             isOrderCompleted = false;
          
@@ -37,6 +40,9 @@ namespace Internal.Codebase
 
         public void OrderComplete() => 
             isOrderCompleted = true;
+
+        public void RecountingWaitingTime() => 
+            waitingTime = Random.Range(5, 20);
 
         private IEnumerator TimeOrderingWaiting()
         {
@@ -48,7 +54,7 @@ namespace Internal.Codebase
                 {
                     OrderCreate();
                     
-                    waitingTime = Random.Range(10, 30);
+                    waitingTime = Random.Range(10, 20);
                 }
             }
         }

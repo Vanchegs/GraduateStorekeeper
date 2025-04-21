@@ -1643,7 +1643,7 @@ PolygonCollider2D:
     - - {x: 15.44777, y: 12.165487}
       - {x: -11.730048, y: 12.156102}
       - {x: -11.699561, y: -5.286026}
-      - {x: 0.49354935, y: -5.014299}
+      - {x: 0.46833274, y: -5.266465}
       - {x: 15.449024, y: -5.237382}
   m_UseDelaunayMesh: 0
 --- !u!68 &7259082002909161806
@@ -3598,6 +3598,10 @@ PrefabInstance:
     - target: {fileID: 3769808054743190208, guid: 1c97a730e50e19b43b6bee9e6352eaaf, type: 3}
       propertyPath: m_Name
       value: IssuePlace
+      objectReference: {fileID: 0}
+    - target: {fileID: 6487643867948311382, guid: 1c97a730e50e19b43b6bee9e6352eaaf, type: 3}
+      propertyPath: <Product>k__BackingField.<Price>k__BackingField
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

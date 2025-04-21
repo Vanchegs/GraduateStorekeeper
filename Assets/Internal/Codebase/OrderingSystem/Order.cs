@@ -18,24 +18,30 @@ namespace Internal.Codebase
             {
                 case 1:
                     TimeToComplete = 15;
-                    OrderPrice = 100;
                     break;
                 case 2:
                     TimeToComplete = 20;
-                    OrderPrice = 150;
                     break;
                 case 3:
                     TimeToComplete = 25;
-                    OrderPrice = 200;
                     break;
                 case 4:
                     TimeToComplete = 30;
-                    OrderPrice = 300;
                     break;
             }
         }
 
         public void ChangeOrder(List<OrderProduct> changedOrder) => 
             ProductsList = changedOrder.ToArray();
+
+        public int CountingOrderPrice()
+        {
+            var price = 0;
+
+            foreach (var product in ProductsList) 
+                price += product.Price;
+
+            return price;
+        }
     }
 }
