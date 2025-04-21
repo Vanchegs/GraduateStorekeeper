@@ -1,6 +1,5 @@
 using UnityEngine;
 using DG.Tweening;
-using Internal.Codebase.UILogic.StoreLogic;
 
 public class ClockHand : MonoBehaviour
 {
@@ -23,9 +22,15 @@ public class ClockHand : MonoBehaviour
 
     private void Start()
     {
-        StartContinuousRotation(180);
+        StartContinuousRotation(ShiftTimer.ShiftDuration);
     }
-
+    
+    private void OnDisable()
+    {
+        if (rectTransform != null) 
+            rectTransform.pivot = originalPivot;
+    }
+    
     public void StartContinuousRotation(float secondsPerRotation)
     {
         transform.rotation = Quaternion.identity;
@@ -35,9 +40,11 @@ public class ClockHand : MonoBehaviour
                  .SetLoops(-1, LoopType.Restart);
     }
     
-    private void OnDisable()
-    {
-        if (rectTransform != null) 
-            rectTransform.pivot = originalPivot;
+    public void ResetClock()
+    { 
+        rectTransform.DOKill(); 
+        rectTransform.rotation = Quaternion.Euler(0, 0, 0); 
+        
+        StartContinuousRotation(ShiftTimer.ShiftDuration);
     }
 }
