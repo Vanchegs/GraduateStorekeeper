@@ -34,7 +34,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3102220406230294786, guid: 1c97a730e50e19b43b6bee9e6352eaaf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3102220406230294786, guid: 1c97a730e50e19b43b6bee9e6352eaaf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3769808054743190208, guid: 1c97a730e50e19b43b6bee9e6352eaaf, type: 3}
       propertyPath: m_Name
-      value: IssuePlace Variant
+      value: DrinkIssuePlace
       objectReference: {fileID: 0}
     - target: {fileID: 5194309691940186388, guid: 1c97a730e50e19b43b6bee9e6352eaaf, type: 3}
       propertyPath: m_Color.b

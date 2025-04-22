@@ -16,7 +16,7 @@ namespace Internal.Codebase
         {
             float currentSpeed = GetCurrentSpeed();
             
-            playerRb.velocity = new Vector2(joystick.Horizontal * currentSpeed,
+            playerRb.linearVelocity = new Vector2(joystick.Horizontal * currentSpeed,
                 joystick.Vertical * currentSpeed);
             
             playerSprite.flipX = joystick.Direction.x < 0;
