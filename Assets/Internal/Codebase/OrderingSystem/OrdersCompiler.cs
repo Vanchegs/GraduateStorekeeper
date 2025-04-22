@@ -7,6 +7,7 @@ namespace Internal.Codebase
     public class OrdersCompiler : MonoBehaviour
     {
         [SerializeField] private IssueTableProductDisplay tableProductDisplay;
+        [SerializeField] private ProductPrice productPrice;
         
         private int waitingTime;
         private bool isOrderCompleted;
@@ -28,13 +29,12 @@ namespace Internal.Codebase
             
             for (int i = 0; i < Order.ProductsList.Length; i++) 
                 Order.ProductsList[i] = new OrderProduct();
-
+            
             RecountingWaitingTime();
             
-            Order.CountingOrderPrice();
-
             isOrderCompleted = false;
-         
+            Order.CountingOrderPrice(productPrice);
+            
             tableProductDisplay.DisplayOrder();
         }
 

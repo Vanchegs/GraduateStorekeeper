@@ -10,13 +10,7 @@ namespace Internal.Codebase.UILogic.StoreLogic
 
         [SerializeField] private RectTransform startPosition;
         [SerializeField] private RectTransform finalPosition;
-
-        private void Awake() => 
-            GameEventBus.EndOfShift += MovePanel;
-
-        private void OnDisable() => 
-            GameEventBus.EndOfShift -= MovePanel;
-
+        
         public void MovePanel()
         {
             if (isStoreActivate == false)
@@ -29,6 +23,7 @@ namespace Internal.Codebase.UILogic.StoreLogic
             {
                 transform.DOMoveY(startPosition.position.y, 1.5f, false);
                 isStoreActivate = false;
+                gameObject.SetActive(isStoreActivate);
             }
         }
     }

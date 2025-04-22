@@ -34,14 +34,10 @@ namespace Internal.Codebase
         public void ChangeOrder(List<OrderProduct> changedOrder) => 
             ProductsList = changedOrder.ToArray();
 
-        public int CountingOrderPrice()
+        public void CountingOrderPrice(ProductPrice productPrice)
         {
-            var price = 0;
-
             foreach (var product in ProductsList) 
-                price += product.Price;
-
-            return price;
+                OrderPrice += productPrice.ProductPrices[product.ProductType];
         }
     }
 }

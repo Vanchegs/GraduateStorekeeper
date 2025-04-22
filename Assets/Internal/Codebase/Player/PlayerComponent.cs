@@ -4,12 +4,13 @@ namespace Internal.Codebase
 {
     public class PlayerComponent : MonoBehaviour
     {
-        [SerializeField] private Mover mover;
         [SerializeField] private PlayerConfig playerConfig;
         [SerializeField] private Animator animator;
-        
+
         private SpriteRenderer sprite;
-            
+        
+        [field: SerializeField] public Mover Mover { get; private set; }
+
         public Inventory Inventory { get; private set; }
         public Wallet Wallet { get; private set; } = new();
         
@@ -23,6 +24,6 @@ namespace Internal.Codebase
         }
 
         private void FixedUpdate() => 
-            mover.MovementControl(sprite, animator);
+            Mover.MovementControl(sprite, animator);
     }
 }

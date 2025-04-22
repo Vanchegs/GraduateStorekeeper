@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShiftTimer
 {
-    public static int ShiftDuration { get; } = 180;
+    public static int ShiftDuration { get; } = 5;
     public bool IsShiftEnd { get; private set; }
 
     public IEnumerator Timer(Action callback)
