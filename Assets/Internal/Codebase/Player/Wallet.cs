@@ -14,14 +14,16 @@ namespace Internal.Codebase
             GameEventBus.UpdateWalletUI?.Invoke();
         }
 
-        public void WriteOffMoney(int value)
+        public int WriteOffMoney(int value)
         {
             PlayerWallet -= value;
             
-            if (PlayerWallet > 0) 
+            if (PlayerWallet <= 0) 
                 PlayerWallet = 0;
             
             GameEventBus.UpdateWalletUI?.Invoke();
+
+            return PlayerWallet;
         }
     }
 }

@@ -14,7 +14,7 @@ TagManager:
   - Water
   - UI
   - Wall
-  - 
+  - Rack
   - 
   - 
   - 
@@ -43,12 +43,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UI
-    uniqueID: 2645378671
-    locked: 0
   - name: Player
     uniqueID: 2528620599
     locked: 0
+  - name: UI
+    uniqueID: 2645378671
+    locked: 0
   - name: Rack
-    uniqueID: 3893662595
+    uniqueID: 686862729
+    locked: 0
+  - name: MainUI
+    uniqueID: 1196049041
     locked: 0

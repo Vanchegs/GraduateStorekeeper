@@ -3,10 +3,22 @@ using UnityEngine;
 
 public class DrinksMachine : MonoBehaviour
 {
-    [SerializeField] private PlayerComponent player;
-
     private int refillAmount = 50;
+    private int drinkPrice = 80;
     
-    private void StaminaRefill() => 
-        player.Mover.staminaSystem.RecoverStamina(refillAmount);
+    private void StaminaRefill(PlayerComponent player)
+    {
+        if (player.Wallet.WriteOffMoney(drinkPrice) > 0) 
+            player.Mover.staminaSystem.RecoverStamina(refillAmount);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            var player = other.GetComponent<PlayerComponent>();
+            
+            StaminaRefill(player);
+        }
+    }
 }
