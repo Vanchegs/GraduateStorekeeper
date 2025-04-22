@@ -30,4 +30,7 @@ public class SystemWorkShift : MonoBehaviour
         
         StartCoroutine(ShiftTimer.Timer(EndOfShift));
     }
+
+    public void StartShift() => 
+        StartCoroutine(ShiftTimer.Timer(EndOfShift));
 }

@@ -1,5 +1,4 @@
 using DG.Tweening;
-using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
 namespace Internal.Codebase.UILogic.StoreLogic
@@ -21,9 +20,13 @@ namespace Internal.Codebase.UILogic.StoreLogic
             }
             else
             {
-                transform.DOMoveY(startPosition.position.y, 1.5f, false);
-                isStoreActivate = false;
-                gameObject.SetActive(isStoreActivate);
+                transform.DOMoveY(startPosition.position.y, 1.5f)
+                    .SetUpdate(true)
+                    .OnComplete(() => 
+                    {
+                        gameObject.SetActive(false);
+                        isStoreActivate = false;
+                    });
             }
         }
     }
