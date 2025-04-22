@@ -37,7 +37,7 @@ namespace Internal.Codebase
 
         public void RecoverStamina(float amount)
         {
-            // currentStamina += recoverRate * amount;
+            currentStamina += amount;
             currentStamina = Mathf.Clamp(currentStamina, 0f, maxStamina);
             OnStaminaChanged?.Invoke(currentStamina);
         }
