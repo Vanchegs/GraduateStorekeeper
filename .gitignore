@@ -70,3 +70,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+GS/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/mobilenotifications.androidlib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/unity/androidnotifications/UnityNotificationBackgroundThread$CancelAllNotificationsTask.class
+GS/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/mobilenotifications.androidlib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/unity/androidnotifications/UnityNotificationBackgroundThread$CancelNotificationTask.class
+GS/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/mobilenotifications.androidlib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/unity/androidnotifications/UnityNotificationBackgroundThread$HousekeepingTask.class
+GS/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/mobilenotifications.androidlib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/unity/androidnotifications/UnityNotificationBackgroundThread$ScheduleNotificationTask.class
+GS/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/mobilenotifications.androidlib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/com/unity/androidnotifications/UnityNotificationBackgroundThread$Task.class
