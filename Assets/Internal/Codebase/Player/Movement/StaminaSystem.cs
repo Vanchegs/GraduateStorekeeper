@@ -6,7 +6,7 @@ namespace Internal.Codebase
     public class StaminaSystem
     {
         private float maxStamina = 100f;
-        private float consumeRate = 2f;
+        private float consumeRate = 1.5f;
     
         public UnityEvent<float> OnStaminaChanged = new();
     

@@ -9,7 +9,7 @@ public class DrinksMachine : MonoBehaviour
     private void StaminaRefill(PlayerComponent player)
     {
         if (player.Wallet.WriteOffMoney(drinkPrice) > 0) 
-            player.Mover.staminaSystem.RecoverStamina(refillAmount);
+            player.Mover.StaminaSystem.RecoverStamina(refillAmount);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

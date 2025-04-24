@@ -22,7 +22,7 @@ namespace Internal.Codebase
             }
 
             // Ждем пока Mover проинициализирует StaminaSystem
-            staminaSystem = player.Mover.staminaSystem;
+            staminaSystem = player.Mover.StaminaSystem;
         
             if (staminaSystem == null)
             {

@@ -10,7 +10,7 @@ namespace Internal.Codebase
         [SerializeField] private PlayerConfig playerConfig;
         [SerializeField] private Rigidbody2D playerRb;
         
-        public StaminaSystem staminaSystem { get; private set; } = new();
+        public StaminaSystem StaminaSystem { get; private set; } = new();
 
         public void MovementControl(SpriteRenderer playerSprite, Animator animator)
         {
@@ -18,13 +18,18 @@ namespace Internal.Codebase
             
             playerRb.velocity = new Vector2(joystick.Horizontal * currentSpeed,
                 joystick.Vertical * currentSpeed);
-            
-            playerSprite.flipX = joystick.Direction.x < 0;
-            
+
+            playerSprite.flipX = joystick.Direction.x switch
+            {
+                > 0 => false,
+                < 0 => true,
+                _ => playerSprite.flipX
+            };
+
             if (joystick.Direction != Vector2.zero)
             {
                 animator.SetBool("IsRun", true);
-                staminaSystem.ConsumeStamina(Time.deltaTime);
+                StaminaSystem.ConsumeStamina(Time.deltaTime);
             }
             else
             {
@@ -34,7 +39,7 @@ namespace Internal.Codebase
 
         private float GetCurrentSpeed()
         {
-            return staminaSystem.CurrentStaminaPercent < 30f
+            return StaminaSystem.CurrentStaminaPercent < 30f
                 ? playerConfig.Speed / 1.5f 
                 : playerConfig.Speed;
         }

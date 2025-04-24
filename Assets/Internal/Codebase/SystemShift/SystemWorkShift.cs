@@ -15,13 +15,13 @@ public class SystemWorkShift : MonoBehaviour
     private void OnEnable()
     {
         EndOfShift += panelMover.MovePanel;
-        EndOfShift += player.Mover.staminaSystem.ResetStamina;
+        EndOfShift += player.Mover.StaminaSystem.ResetStamina;
     }
 
     private void OnDisable()
     {
         EndOfShift -= panelMover.MovePanel;
-        EndOfShift -= player.Mover.staminaSystem.ResetStamina;
+        EndOfShift -= player.Mover.StaminaSystem.ResetStamina;
     }
 
     private void Start()
