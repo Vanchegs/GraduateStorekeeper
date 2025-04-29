@@ -15,38 +15,38 @@ MonoBehaviour:
   ProductSprites:
     _serializedList:
     - Key: 17
-      Value: {fileID: 910562691, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: -2013268177, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 16
-      Value: {fileID: 2146759847, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: -1443689588, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 15
-      Value: {fileID: -1685622689, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: -1823487106, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 14
-      Value: {fileID: 787253346, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: -1884718045, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 13
-      Value: {fileID: 286856215, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: 1778256711, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 12
-      Value: {fileID: -317958954, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: 1099805541, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 11
-      Value: {fileID: 1224228840, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: 1848962164, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 10
-      Value: {fileID: 715365559, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: 932737022, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 0
-      Value: {fileID: -63550235, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: -51532825, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 1
       Value: {fileID: 21300000, guid: e12747061a905084fb0f9f446453d85b, type: 3}
     - Key: 2
-      Value: {fileID: -1622451319, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: 73882143, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 3
-      Value: {fileID: -2042902934, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: -2116170171, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 4
-      Value: {fileID: 312197280, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: 89389473, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 5
-      Value: {fileID: -1938505829, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: -925381444, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 6
       Value: {fileID: -732975223, guid: b0e8fca08c28be841a10a5aba3568cf9, type: 3}
     - Key: 7
       Value: {fileID: -2044282635, guid: 030f59a87f1f3b241bc62507c997c849, type: 3}
     - Key: 8
-      Value: {fileID: -1704542494, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: -1314598202, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}
     - Key: 9
-      Value: {fileID: 1771651183, guid: b45198bd23594944c875b8b922165596, type: 3}
+      Value: {fileID: -835346790, guid: 6e1e3450867b80f428c6e24517d7aaa6, type: 3}

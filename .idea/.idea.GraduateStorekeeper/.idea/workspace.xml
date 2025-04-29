@@ -6,18 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="78afff7d-b5fc-473c-af12-c4e72c81acd2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/DrinksMachine/DrinksMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/DrinksMachine/DrinksMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Movement/Mover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Movement/Mover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Movement/StaminaBarUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Movement/StaminaBarUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Movement/StaminaSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Movement/StaminaSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SystemWorkShift.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SystemWorkShift.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Animations/PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Animations/PlayerAnimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Dispenser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Dispenser.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Animations/PlayerIdle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Animations/PlayerIdle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Animations/PlayerWallk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Animations/PlayerWallk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Configs/PlayerConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Configs/PlayerConfig.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Warehouse.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Warehouse.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Sprites/Floor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Sprites/Floor.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Sprites/predmetu12.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Sprites/predmetu12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Storages/ProductSprites.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Storages/ProductSprites.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +169,7 @@
       <workItem from="1745401844354" duration="73000" />
       <workItem from="1745402024840" duration="67000" />
       <workItem from="1745503043865" duration="3097000" />
+      <workItem from="1745934736192" duration="1704000" />
     </task>
     <servers />
   </component>
