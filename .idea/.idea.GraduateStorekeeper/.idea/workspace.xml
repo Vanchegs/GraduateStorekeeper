@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="78afff7d-b5fc-473c-af12-c4e72c81acd2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Tutorial/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Tutorial/DialogueManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +164,7 @@
       <workItem from="1745934736192" duration="1856000" />
       <workItem from="1746059478634" duration="1311000" />
       <workItem from="1746061034493" duration="133000" />
+      <workItem from="1746100143630" duration="88000" />
     </task>
     <servers />
   </component>

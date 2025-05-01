@@ -1,13 +1,13 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.UI;
+using TMPro;
 
 namespace Internal.Codebase
 {
     public class DialogueManager : MonoBehaviour
     {
         [SerializeField] private GameObject dialoguePanel;
-        [SerializeField] private Text dialogueText;
+        [SerializeField] private TMP_Text dialogueText;
         [SerializeField] private List<string> dialogues;
         
         private int currentLine; 
