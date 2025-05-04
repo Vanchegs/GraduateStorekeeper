@@ -692,7 +692,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -717,7 +717,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5111382, y: -2.08255, z: -11}
+  m_LocalPosition: {x: -3.5713868, y: -3.08587, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -770,7 +770,7 @@ GameObject:
   - component: {fileID: 610789214}
   - component: {fileID: 610789213}
   m_Layer: 5
-  m_Name: WalletText
+  m_Name: DialogueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -784,7 +784,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610789211}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0000020235777}
   m_LocalScale: {x: 0.53893197, y: 0.53893197, z: 0.53893197}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -817,8 +817,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3c004aba601f4f94ab1529b907508ee4, type: 2}
+  m_sharedMaterial: {fileID: 8366317457852423798, guid: 3c004aba601f4f94ab1529b907508ee4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -878,7 +878,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -410.08157, y: 0, z: -412.94455, w: 0}
+  m_margin: {x: -376.48184, y: 0, z: -379.34506, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1025,7 +1025,7 @@ GameObject:
   - component: {fileID: 1011065295}
   - component: {fileID: 1011065294}
   m_Layer: 5
-  m_Name: Image
+  m_Name: KoreanFace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1045,10 +1045,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2015923255}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1030.29, y: 1.01}
-  m_SizeDelta: {x: 119.48, y: 120.99}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: -81.81006, y: 13.69}
+  m_SizeDelta: {x: 144.52002, y: 146.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1011065294
 MonoBehaviour:
@@ -1810,7 +1810,7 @@ MonoBehaviour:
   m_Follow: {fileID: 369377981}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 4
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -2124,7 +2124,7 @@ GameObject:
   - component: {fileID: 2015923257}
   - component: {fileID: 2015923256}
   m_Layer: 5
-  m_Name: DIaloguePanel
+  m_Name: DialoguePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
