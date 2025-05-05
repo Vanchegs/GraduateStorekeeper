@@ -6,9 +6,10 @@ namespace Internal.Codebase
     [Serializable]
     public class Mover
     {
-        [SerializeField] private Joystick joystick;
         [SerializeField] private PlayerConfig playerConfig;
         [SerializeField] private Rigidbody2D playerRb;
+
+        [field: SerializeField] public Joystick Joystick { get; private set; }
         
         public StaminaSystem StaminaSystem { get; private set; } = new();
 
@@ -16,17 +17,17 @@ namespace Internal.Codebase
         {
             float currentSpeed = GetCurrentSpeed();
             
-            playerRb.velocity = new Vector2(joystick.Horizontal * currentSpeed,
-                joystick.Vertical * currentSpeed);
+            playerRb.velocity = new Vector2(Joystick.Horizontal * currentSpeed,
+                Joystick.Vertical * currentSpeed);
 
-            playerSprite.flipX = joystick.Direction.x switch
+            playerSprite.flipX = Joystick.Direction.x switch
             {
                 > 0 => false,
                 < 0 => true,
                 _ => playerSprite.flipX
             };
 
-            if (joystick.Direction != Vector2.zero)
+            if (Joystick.Direction != Vector2.zero)
             {
                 animator.SetBool("IsRun", true);
                 StaminaSystem.ConsumeStamina(Time.deltaTime);

@@ -7,6 +7,7 @@ public class SystemWorkShift : MonoBehaviour
 {
     [SerializeField] private ShiftPanelMover panelMover;
     [SerializeField] private PlayerComponent player;
+    [SerializeField] private Joystick joystick;
     
     private Action EndOfShift;
     
@@ -16,12 +17,14 @@ public class SystemWorkShift : MonoBehaviour
     {
         EndOfShift += panelMover.MovePanel;
         EndOfShift += player.Mover.StaminaSystem.ResetStamina;
+        EndOfShift += SwitchJoystick;
     }
 
     private void OnDisable()
     {
         EndOfShift -= panelMover.MovePanel;
         EndOfShift -= player.Mover.StaminaSystem.ResetStamina;
+        EndOfShift -= SwitchJoystick;
     }
 
     private void Start()
@@ -31,6 +34,18 @@ public class SystemWorkShift : MonoBehaviour
         StartCoroutine(ShiftTimer.Timer(EndOfShift));
     }
 
-    public void StartShift() => 
+    public void StartShift()
+    {
         StartCoroutine(ShiftTimer.Timer(EndOfShift));
+        SwitchJoystick();
+    }
+
+    private void SwitchJoystick()
+    {
+        player.Mover.Joystick.enabled = joystick.enabled switch
+        {
+            true => false,
+            false => true
+        };
+    }
 }
