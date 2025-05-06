@@ -10,10 +10,15 @@ namespace Internal.Codebase
         [SerializeField] private TMP_Text dialogueText;
         [SerializeField] private List<string> dialogues;
         
-        private int currentLine; 
-    
-        void Start() => 
-            StartDialogue(dialogues);
+        private int currentLine;
+
+        public bool IsTutorialCompleted;
+        
+        void Start()
+        {
+            if (IsTutorialCompleted == false)
+                StartDialogue(dialogues);
+        }
 
         public void StartDialogue(List<string> lines)
         {
@@ -33,10 +38,11 @@ namespace Internal.Codebase
             else
                 EndDialogue();
         }
-    
-        void EndDialogue()
-        {
+
+        private void EndDialogue() =>
             dialoguePanel.SetActive(false);
-        }
+
+        private void CompleteTutorial() => 
+            IsTutorialCompleted = true;
     }
 }
