@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78afff7d-b5fc-473c-af12-c4e72c81acd2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Movement/StaminaBarUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Movement/StaminaBarUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Wallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Wallet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/WalletUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/WalletUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/FinalShiftPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/FinalShiftPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Sprites/Ticket.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Sprites/Ticket.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +167,7 @@
       <workItem from="1746468022638" duration="1669000" />
       <workItem from="1746543323599" duration="400000" />
       <workItem from="1746543740449" duration="818000" />
-      <workItem from="1746633785341" duration="1009000" />
+      <workItem from="1746633785341" duration="1605000" />
     </task>
     <servers />
   </component>
