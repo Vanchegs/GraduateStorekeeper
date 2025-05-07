@@ -1,29 +1,28 @@
 using Internal.Codebase.Infrastructure;
-using UnityEngine;
 
 namespace Internal.Codebase
 {
     public class Wallet
     {
-        public int PlayerWallet { get; private set; }
+        public int PlayerBalance { get; private set; }
         
         public void ChargeToWallet(int value)
         {
-            PlayerWallet += value;
+            PlayerBalance += value;
             
             GameEventBus.UpdateWalletUI?.Invoke();
         }
 
         public int WriteOffMoney(int value)
         {
-            PlayerWallet -= value;
+            PlayerBalance -= value;
             
-            if (PlayerWallet <= 0) 
-                PlayerWallet = 0;
+            if (PlayerBalance <= 0) 
+                PlayerBalance = 0;
             
             GameEventBus.UpdateWalletUI?.Invoke();
 
-            return PlayerWallet;
+            return PlayerBalance;
         }
     }
 }

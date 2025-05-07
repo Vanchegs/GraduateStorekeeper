@@ -15,20 +15,7 @@ namespace Internal.Codebase
 
         private void Start()
         {
-            if (player == null || player.Mover == null)
-            {
-                Debug.LogError("Player or Mover reference is missing!");
-                return;
-            }
-
-            // Ждем пока Mover проинициализирует StaminaSystem
             staminaSystem = player.Mover.StaminaSystem;
-        
-            if (staminaSystem == null)
-            {
-                Debug.LogError("StaminaSystem is not initialized!");
-                return;
-            }
 
             staminaSystem.OnStaminaChanged.AddListener(UpdateStaminaUI);
             staminaSlider.maxValue = staminaSystem.MaxStamina;

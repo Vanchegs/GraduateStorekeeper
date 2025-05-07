@@ -17,7 +17,7 @@ namespace Internal.Codebase
                 return;
             }
 
-            walletText.text = player.Wallet.PlayerWallet.ToString();
+            walletText.text = player.Wallet.PlayerBalance.ToString();
         }
 
         private void OnEnable() => 
@@ -27,6 +27,6 @@ namespace Internal.Codebase
             GameEventBus.UpdateWalletUI -= UpdateWallet;
 
         private void UpdateWallet() => 
-            walletText.text = player.Wallet.PlayerWallet.ToString();
+            walletText.text = player.Wallet.PlayerBalance.ToString();
     }
 }
