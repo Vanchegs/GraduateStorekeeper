@@ -1,5 +1,7 @@
 using System;
 using Internal.Codebase;
+using Internal.Codebase.Infrastructure;
+using Internal.Codebase.SystemShift;
 using Internal.Codebase.UILogic.StoreLogic;
 using UnityEngine;
 
@@ -8,35 +10,34 @@ public class SystemWorkShift : MonoBehaviour
     [SerializeField] private ShiftPanelMover panelMover;
     [SerializeField] private PlayerComponent player;
     [SerializeField] private Joystick joystick;
-    
-    private Action EndOfShift;
+    [SerializeField] private MoneyAccumulationBarUI moneyBar;
     
     public ShiftTimer ShiftTimer { get; private set; }
 
     private void OnEnable()
     {
-        EndOfShift += SwitchJoystick;
-        EndOfShift += panelMover.MovePanel;
-        EndOfShift += player.Mover.StaminaSystem.ResetStamina;
+        GameEventBus.EndOfShift += SwitchJoystick;
+        GameEventBus.EndOfShift += panelMover.MovePanel;
+        GameEventBus.EndOfShift += player.Mover.StaminaSystem.ResetStamina;
     }
 
     private void OnDisable()
     {
-        EndOfShift -= SwitchJoystick;
-        EndOfShift -= panelMover.MovePanel;
-        EndOfShift -= player.Mover.StaminaSystem.ResetStamina;
+        GameEventBus.EndOfShift -= SwitchJoystick;
+        GameEventBus.EndOfShift -= panelMover.MovePanel;
+        GameEventBus.EndOfShift -= player.Mover.StaminaSystem.ResetStamina;
     }
 
     private void Start()
     {
         ShiftTimer = new ShiftTimer();
         
-        StartCoroutine(ShiftTimer.Timer(EndOfShift));
+        StartCoroutine(ShiftTimer.Timer(GameEventBus.EndOfShift));
     }
 
     public void StartShift()
     {
-        StartCoroutine(ShiftTimer.Timer(EndOfShift));
+        StartCoroutine(ShiftTimer.Timer(GameEventBus.EndOfShift));
         SwitchJoystick();
     }
 

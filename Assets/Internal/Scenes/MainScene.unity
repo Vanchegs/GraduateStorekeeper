@@ -474,6 +474,7 @@ MonoBehaviour:
   panelMover: {fileID: 1926832960}
   player: {fileID: 2108783531}
   joystick: {fileID: 611559263}
+  moneyBar: {fileID: 0}
 --- !u!114 &378557852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,7 +588,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.9856076, y: -3.08653, z: -11}
+  m_LocalPosition: {x: -3.7360477, y: -3.08613, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1917,7 +1918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3840184549267750491, guid: a41002d131463d2479c5a763d094a014, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4985035008975409105, guid: a41002d131463d2479c5a763d094a014, type: 3}
       propertyPath: m_Name
@@ -1925,7 +1926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4985035008975409105, guid: a41002d131463d2479c5a763d094a014, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5317261706251858529, guid: a41002d131463d2479c5a763d094a014, type: 3}
       propertyPath: m_LocalScale.x

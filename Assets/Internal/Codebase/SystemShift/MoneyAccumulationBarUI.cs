@@ -1,3 +1,4 @@
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,19 +14,24 @@ namespace Internal.Codebase.SystemShift
     
         private Wallet wallet;
 
+        private void OnEnable() => 
+            GameEventBus.EndOfShift += UpdateUIBar;
+
+        private void OnDisable() => 
+            GameEventBus.EndOfShift -= UpdateUIBar;
+
         private void Start()
         {
             wallet = player.Wallet;
 
             moneySlider.maxValue = TicketPrice;
-            UpdateUIBar(wallet.PlayerBalance);
         }
 
-        private void UpdateUIBar(float currentBalance)
+        private void UpdateUIBar()
         {
             if (moneySlider == null || fillImage == null) return;
         
-            moneySlider.value = currentBalance;
+            moneySlider.value = wallet.PlayerBalance;
         }
     }
 }

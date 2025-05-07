@@ -8,5 +8,6 @@ namespace Internal.Codebase.Infrastructure
         public static Action UpdateOrderDisplay;
         public static Action UpdateInventoryDisplay;
         public static Action UpdateWalletUI;
+        public static Action EndOfShift;
     }
 }
