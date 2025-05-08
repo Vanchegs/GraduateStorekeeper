@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78afff7d-b5fc-473c-af12-c4e72c81acd2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/App.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/GameEventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/GameEventBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/MoneyAccumulationBarUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/MoneyAccumulationBarUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SystemWorkShift.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SystemWorkShift.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Warehouse.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Warehouse.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Sprites/Flash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Sprites/Flash.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +174,8 @@
       <workItem from="1746543323599" duration="400000" />
       <workItem from="1746543740449" duration="818000" />
       <workItem from="1746633785341" duration="3087000" />
+      <workItem from="1746746271486" duration="1186000" />
+      <workItem from="1746747486172" duration="115000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 28186445a51848a408c973d6c1e078a8
+guid: d2609584dc6a8764aabecddf99803224
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: FlashAndPanel_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 37
+        width: 124
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d638290ffb5cafa48aeca016ccd21b5e
+      internalID: 658678866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlashAndPanel_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 37
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817a1d2b4ebb57748afb7b80fc300aef
+      internalID: -1222453125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +174,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FlashAndPanel_0: 658678866
+      FlashAndPanel_1: -1222453125
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
