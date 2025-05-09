@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
 public class ShiftTimer
@@ -12,7 +13,8 @@ public class ShiftTimer
         yield return new WaitForSeconds(ShiftDuration);
 
         IsShiftEnd = true;
-        
+
         callback.Invoke();
+        GameEventBus.SaveGame?.Invoke();
     }
 }

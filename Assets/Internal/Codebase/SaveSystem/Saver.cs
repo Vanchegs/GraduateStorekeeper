@@ -1,4 +1,5 @@
 using Internal.Codebase;
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
 public class Saver : MonoBehaviour
@@ -10,10 +11,14 @@ public class Saver : MonoBehaviour
     private Wallet wallet;
     private bool isInitialized = false;
 
-    private void Start()
-    {
+    private void OnEnable() => 
+        GameEventBus.SaveGame += Save;
+
+    private void OnDisable() => 
+        GameEventBus.SaveGame -= Save;
+
+    private void Start() => 
         Initialize();
-    }
 
     public void Save()
     {
