@@ -2,7 +2,7 @@ using Internal.Codebase.Infrastructure;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Internal.Codebase.SystemShift
+namespace Internal.Codebase
 {
     public class MoneyAccumulationBarUI : MonoBehaviour
     {

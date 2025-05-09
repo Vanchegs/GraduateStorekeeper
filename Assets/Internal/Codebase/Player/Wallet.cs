@@ -24,5 +24,8 @@ namespace Internal.Codebase
 
             return PlayerBalance;
         }
+
+        public void SetSavedBalance(int saveDataPlayerBalance) => 
+            PlayerBalance = saveDataPlayerBalance;
     }
 }

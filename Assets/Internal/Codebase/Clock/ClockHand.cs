@@ -3,11 +3,6 @@ using DG.Tweening;
 
 public class ClockHand : MonoBehaviour
 {
-    // [Header("Settings")]
-    // [SerializeField] private float rotationDuration = 0.5f;
-    // [SerializeField] private Ease easeType = Ease.OutElastic;
-    // [SerializeField] private bool smoothMovement = true;
-
     private RectTransform rectTransform;
     private Vector2 originalPivot;
     
