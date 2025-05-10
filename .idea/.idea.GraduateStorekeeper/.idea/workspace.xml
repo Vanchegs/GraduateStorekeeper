@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="78afff7d-b5fc-473c-af12-c4e72c81acd2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/Order.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/OrdersCompiler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/OrdersCompiler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Tutorial/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Tutorial/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SaveSystem/Saver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SaveSystem/Saver.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +173,7 @@
       <workItem from="1746746271486" duration="1186000" />
       <workItem from="1746747486172" duration="115000" />
       <workItem from="1746750757807" duration="38000" />
-      <workItem from="1746825001959" duration="7591000" />
+      <workItem from="1746825001959" duration="8281000" />
     </task>
     <servers />
   </component>

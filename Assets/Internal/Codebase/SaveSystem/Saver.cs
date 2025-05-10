@@ -17,7 +17,7 @@ public class Saver : MonoBehaviour
     private void OnDisable() => 
         GameEventBus.SaveGame -= Save;
 
-    private void Start() => 
+    private void Awake() => 
         Initialize();
 
     public void Save()
@@ -98,5 +98,6 @@ public class Saver : MonoBehaviour
     {
         saveData.IsTutorialCompleted = dialogueManager.IsTutorialCompleted;
         saveData.PlayerBalance = wallet.PlayerBalance;
+        Debug.Log($"Saving IsTutorialCompleted: {dialogueManager.IsTutorialCompleted}");
     }
 }
