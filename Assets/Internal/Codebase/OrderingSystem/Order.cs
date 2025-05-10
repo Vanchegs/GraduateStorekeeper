@@ -9,7 +9,7 @@ namespace Internal.Codebase
 
         public int OrderPrice { get; private set; }
         public OrderProduct[] ProductsList { get; private set; }
-
+        
         public Order()
         {
             ProductsList = new OrderProduct[Random.Range(1, 5)];
@@ -31,8 +31,13 @@ namespace Internal.Codebase
             }
         }
 
-        public void ChangeOrder(List<OrderProduct> changedOrder) => 
+        public void ChangeOrder(List<OrderProduct> changedOrder)
+        {
             ProductsList = changedOrder.ToArray();
+
+            if (ProductsList.Length == 0) 
+                OrderPrice = 0;
+        }
 
         public void CountingOrderPrice(ProductPrice productPrice)
         {

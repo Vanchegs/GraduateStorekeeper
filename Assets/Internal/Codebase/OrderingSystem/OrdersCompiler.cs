@@ -10,13 +10,13 @@ namespace Internal.Codebase
         [SerializeField] private ProductPrice productPrice;
         
         private int waitingTime;
-        private bool isOrderCompleted;
-        
+
+        public bool IsCompleted { get; private set; }
         public Order Order { get; private set; }
 
         private void Start()
         {
-            isOrderCompleted = true;
+            IsCompleted = true;
             
             waitingTime = Random.Range(5, 10);
             
@@ -32,14 +32,14 @@ namespace Internal.Codebase
             
             RecountingWaitingTime();
             
-            isOrderCompleted = false;
+            IsCompleted = false;
             Order.CountingOrderPrice(productPrice);
             
             tableProductDisplay.DisplayOrder();
         }
 
         public void OrderComplete() => 
-            isOrderCompleted = true;
+            IsCompleted = true;
 
         public void RecountingWaitingTime() => 
             waitingTime = Random.Range(5, 20);
@@ -50,7 +50,7 @@ namespace Internal.Codebase
             {
                 yield return new WaitForSeconds(waitingTime);
 
-                if (isOrderCompleted)
+                if (IsCompleted)
                 {
                     OrderCreate();
                     

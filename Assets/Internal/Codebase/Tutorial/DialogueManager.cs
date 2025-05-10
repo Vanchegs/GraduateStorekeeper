@@ -14,15 +14,17 @@ namespace Internal.Codebase
         private int currentLine;
 
         public bool IsTutorialCompleted;
-        
-        void Start()
+
+        private void Start()
         {
-            if (IsTutorialCompleted == false)
-                StartDialogue(dialogues);
+            StartDialogue(dialogues);
         }
 
         public void StartDialogue(List<string> lines)
         {
+            if (IsTutorialCompleted)
+                return;
+            
             dialogues = lines;
             currentLine = 0;
             dialoguePanel.SetActive(true);
@@ -37,13 +39,19 @@ namespace Internal.Codebase
                 currentLine++;
             }
             else
+            {
                 EndDialogue();
+                CompleteTutorial();
+            }
         }
 
         private void EndDialogue() =>
             dialoguePanel.SetActive(false);
 
-        private void CompleteTutorial() => 
+        private void CompleteTutorial()
+        {
             IsTutorialCompleted = true;
+            GameEventBus.SaveGame?.Invoke();
+        }
     }
 }
