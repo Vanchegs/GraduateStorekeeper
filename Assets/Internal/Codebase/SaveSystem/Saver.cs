@@ -91,7 +91,7 @@ public class Saver : MonoBehaviour
     private void ApplyLoadedData()
     {
         wallet.SetSavedBalance(saveData.PlayerBalance);
-        dialogueManager.IsTutorialCompleted = saveData.IsTutorialCompleted;
+        dialogueManager.SetIsTutorialCompleted(saveData.IsTutorialCompleted);
     }
 
     private void UpdateSaveData()

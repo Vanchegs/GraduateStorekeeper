@@ -13,12 +13,10 @@ namespace Internal.Codebase
         
         private int currentLine;
 
-        public bool IsTutorialCompleted;
+        public bool IsTutorialCompleted { get; private set; }
 
-        private void Start()
-        {
+        private void Start() => 
             StartDialogue(dialogues);
-        }
 
         public void StartDialogue(List<string> lines)
         {
@@ -44,6 +42,9 @@ namespace Internal.Codebase
                 CompleteTutorial();
             }
         }
+
+        public void SetIsTutorialCompleted(bool isCompleted) => 
+            IsTutorialCompleted = isCompleted;
 
         private void EndDialogue() =>
             dialoguePanel.SetActive(false);

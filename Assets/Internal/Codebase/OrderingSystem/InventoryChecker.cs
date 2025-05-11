@@ -35,28 +35,23 @@ public class InventoryChecker : MonoBehaviour
 
     private void RemoveMatchingItems(List<OrderProduct> orderProducts, List<Product> inventory)
     {
-        List<OrderProduct> itemsToRemoveFromOrders = new List<OrderProduct>();
-        List<Product> itemsToRemoveFromInventory = new List<Product>();
+        var remainingOrderProducts = new List<OrderProduct>(orderProducts);
+        var remainingInventory = new List<Product>(inventory);
+        
+        orderProducts.Clear();
+        inventory.Clear();
 
-        foreach (var inventoryItem in inventory)
+        foreach (var orderProduct in remainingOrderProducts)
         {
-            var matchingOrderProduct = orderProducts.FirstOrDefault(op => op.ProductType == inventoryItem.ProductType);
-            if (matchingOrderProduct != null)
-            {
-                itemsToRemoveFromOrders.Add(matchingOrderProduct);
-                itemsToRemoveFromInventory.Add(inventoryItem);
-            }
+            var inventoryItem = remainingInventory.FirstOrDefault(p => p.ProductType == orderProduct.ProductType);
+
+            if (inventoryItem != null)
+                remainingInventory.Remove(inventoryItem);
+            else
+                orderProducts.Add(orderProduct);
         }
         
-        foreach (var item in itemsToRemoveFromOrders)
-        {
-            orderProducts.Remove(item);
-        }
-
-        foreach (var item in itemsToRemoveFromInventory)
-        {
-            inventory.Remove(item);
-        }
+        inventory.AddRange(remainingInventory);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
