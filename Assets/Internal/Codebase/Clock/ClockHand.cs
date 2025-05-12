@@ -1,5 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
+using Internal.Codebase;
 
 public class ClockHand : MonoBehaviour
 {

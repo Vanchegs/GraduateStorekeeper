@@ -1,4 +1,3 @@
-using Internal.Codebase;
 using Internal.Codebase.Infrastructure;
 using Internal.Codebase.UILogic.StoreLogic;
 using UnityEngine;
@@ -10,7 +9,6 @@ namespace Internal.Codebase
         [SerializeField] private ShiftPanelMover panelMover;
         [SerializeField] private PlayerComponent player;
         [SerializeField] private Joystick joystick;
-        [SerializeField] private MoneyAccumulationBarUI moneyBar;
         
         public ShiftTimer ShiftTimer { get; private set; }
     

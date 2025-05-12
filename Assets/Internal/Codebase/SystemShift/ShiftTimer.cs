@@ -3,18 +3,22 @@ using System.Collections;
 using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
-public class ShiftTimer
+namespace Internal.Codebase
 {
-    public static int ShiftDuration { get; } = 120;
-    public bool IsShiftEnd { get; private set; }
-
-    public IEnumerator Timer(Action callback)
+    public class ShiftTimer
     {
-        yield return new WaitForSeconds(ShiftDuration);
-
-        IsShiftEnd = true;
-
-        callback.Invoke();
-        GameEventBus.SaveGame?.Invoke();
+        public static int ShiftDuration { get; } = 120;
+        public bool IsShiftEnd { get; private set; }
+    
+        public IEnumerator Timer(Action callback)
+        {
+            yield return new WaitForSeconds(ShiftDuration);
+    
+            IsShiftEnd = true;
+    
+            callback.Invoke();
+            GameEventBus.SaveGame?.Invoke();
+        }
     }
 }
+
