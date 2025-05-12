@@ -1,4 +1,5 @@
 using System.Collections;
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -14,14 +15,29 @@ namespace Internal.Codebase
         public bool IsCompleted { get; private set; }
         public Order Order { get; private set; }
 
+        private void OnEnable() => 
+            GameEventBus.EndOfShift += ResetOrder;
+
+        private void OnDisable() => 
+            GameEventBus.EndOfShift -= ResetOrder;
+
         private void Start()
         {
             IsCompleted = true;
             
             waitingTime = Random.Range(5, 10);
             
-            StartCoroutine(TimeOrderingWaiting());
+            StartCoroutine(CreateOrderWithDelay());
         }
+
+        public void OrderComplete() => 
+            IsCompleted = true;
+
+        public void RecountingWaitingTime() => 
+            waitingTime = Random.Range(5, 20);
+
+        public void StartOrderCreating() => 
+            StartCoroutine(CreateOrderWithDelay());
 
         private void OrderCreate()
         {
@@ -38,13 +54,10 @@ namespace Internal.Codebase
             tableProductDisplay.DisplayOrder();
         }
 
-        public void OrderComplete() => 
-            IsCompleted = true;
+        private void ResetOrder() => 
+            tableProductDisplay.DisplayOrder();
 
-        public void RecountingWaitingTime() => 
-            waitingTime = Random.Range(5, 20);
-
-        private IEnumerator TimeOrderingWaiting()
+        private IEnumerator CreateOrderWithDelay()
         {
             while (true)
             {

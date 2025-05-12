@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="78afff7d-b5fc-473c-af12-c4e72c81acd2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Clock/ClockHand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Clock/ClockHand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Common.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Common/ShiftPanelMover.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Common/ShiftPanelMover.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/MoneyAccumulationBarUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/MoneyAccumulationBarUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/ShiftTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/ShiftTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/IssueTableProductDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/IssueTableProductDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/OrdersCompiler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/OrdersCompiler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SystemWorkShift.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SystemWorkShift.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Warehouse.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Warehouse.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +22,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/DrinksMachine/DrinksMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/CompilerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/ProductsType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Player/Inventory/InventoryDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/SaveSystem/SaveData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/SaveSystem/Saver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/ShiftTimer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Internal/Scenes/BossAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.9/Scripts/Runtime/TMP_MaterialManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5879d8d225474494bcffdfe64965038e174000/33/04c86ec4/Debug.cs" root0="SKIP_HIGHLIGHTING" />
@@ -183,7 +181,8 @@
       <workItem from="1746825001959" duration="8355000" />
       <workItem from="1746866647837" duration="1227000" />
       <workItem from="1746996182562" duration="3291000" />
-      <workItem from="1747027860429" duration="1715000" />
+      <workItem from="1747027860429" duration="4876000" />
+      <workItem from="1747033323511" duration="1239000" />
     </task>
     <servers />
   </component>

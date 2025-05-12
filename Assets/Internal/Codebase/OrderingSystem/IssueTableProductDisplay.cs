@@ -11,10 +11,6 @@ namespace Internal.Codebase
         [SerializeField] private OrdersCompiler ordersCompiler;
         [SerializeField] private ProductSpritesStorage spritesStorage;
 
-#pragma warning disable CS0414 // Field is assigned but its value is never used
-        private bool isInitialized = false;
-#pragma warning restore CS0414 // Field is assigned but its value is never used
-
         private void Awake()
         {
             if (ordersCompiler == null) 

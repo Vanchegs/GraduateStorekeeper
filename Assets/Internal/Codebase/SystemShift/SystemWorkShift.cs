@@ -9,6 +9,7 @@ namespace Internal.Codebase
         [SerializeField] private ShiftPanelMover panelMover;
         [SerializeField] private PlayerComponent player;
         [SerializeField] private Joystick joystick;
+        [SerializeField] private Transform playerSpawnPoint;
         
         public ShiftTimer ShiftTimer { get; private set; }
     
@@ -36,9 +37,13 @@ namespace Internal.Codebase
         public void StartShift()
         {
             StartCoroutine(ShiftTimer.Timer(GameEventBus.EndOfShift));
+            ResetPlayerPosition();
             SwitchJoystick();
         }
-    
+
+        private void ResetPlayerPosition() => 
+            player.gameObject.transform.position = playerSpawnPoint.position;
+
         private void SwitchJoystick()
         {
             player.Mover.Joystick.enabled = joystick.enabled switch
