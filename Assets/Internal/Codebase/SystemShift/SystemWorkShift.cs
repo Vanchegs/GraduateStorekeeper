@@ -36,9 +36,9 @@ namespace Internal.Codebase
     
         public void StartShift()
         {
+            SwitchJoystick();
             StartCoroutine(ShiftTimer.Timer(GameEventBus.EndOfShift));
             ResetPlayerPosition();
-            SwitchJoystick();
         }
 
         private void ResetPlayerPosition() => 
@@ -46,11 +46,16 @@ namespace Internal.Codebase
 
         private void SwitchJoystick()
         {
-            player.Mover.Joystick.enabled = joystick.enabled switch
+            switch (joystick.enabled)
             {
-                true => false,
-                false => true
-            };
+                case true:
+                    joystick.OnPointerUp(null);
+                    player.Mover.Joystick.enabled = false;
+                    break;
+                case false:
+                    player.Mover.Joystick.enabled = true;
+                    break;
+            }
         }
     }
 }
