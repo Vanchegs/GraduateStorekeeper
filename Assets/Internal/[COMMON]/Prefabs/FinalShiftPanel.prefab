@@ -312,7 +312,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneySlider: {fileID: 7369783862098009624}
-  fillImage: {fileID: 6799000864106148917}
   player: {fileID: 0}
 --- !u!1 &3077513517076371845
 GameObject:
@@ -896,7 +895,7 @@ GameObject:
   - component: {fileID: 2761790679619230628}
   - component: {fileID: 6446672799008964550}
   - component: {fileID: 17615316863652817}
-  - component: {fileID: 8116232266271638499}
+  - component: {fileID: 5006531639615752349}
   m_Layer: 0
   m_Name: SafePanel
   m_TagString: Untagged
@@ -962,7 +961,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8116232266271638499
+--- !u!114 &5006531639615752349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -971,11 +970,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9103652093612125759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67bfce6768134bfba4ece5c2cad3a67a, type: 3}
+  m_Script: {fileID: 11500000, guid: 779ccee8d5f467e4b87297d3820aa72e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walletText: {fileID: 3586657338113095797}
-  player: {fileID: 0}
+  safeBalanceText: {fileID: 3586657338113095797}
+  playerComponent: {fileID: 0}
 --- !u!1 &9132824871718567710
 GameObject:
   m_ObjectHideFlags: 0

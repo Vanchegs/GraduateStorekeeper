@@ -9,6 +9,12 @@ namespace Internal.Codebase
         [SerializeField] private TMP_Text walletText;
         [SerializeField] private PlayerComponent player;
 
+        private void OnEnable() => 
+            GameEventBus.UpdateWalletUI += UpdateWallet;
+
+        private void OnDisable() => 
+            GameEventBus.UpdateWalletUI -= UpdateWallet;
+        
         private void Start()
         {
             if (player.Wallet == null)
@@ -19,13 +25,7 @@ namespace Internal.Codebase
 
             walletText.text = player.Wallet.PlayerBalance.ToString();
         }
-
-        private void OnEnable() => 
-            GameEventBus.UpdateWalletUI += UpdateWallet;
-
-        private void OnDisable() => 
-            GameEventBus.UpdateWalletUI -= UpdateWallet;
-
+        
         private void UpdateWallet() => 
             walletText.text = player.Wallet.PlayerBalance.ToString();
     }

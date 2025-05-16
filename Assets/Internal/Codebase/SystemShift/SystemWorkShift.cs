@@ -7,6 +7,7 @@ namespace Internal.Codebase
     public class SystemWorkShift : MonoBehaviour
     {
         [SerializeField] private ShiftPanelMover panelMover;
+        [SerializeField] private SafeBalanceUI safeBalance;
         [SerializeField] private PlayerComponent player;
         [SerializeField] private Joystick joystick;
         [SerializeField] private Transform playerSpawnPoint;
@@ -18,6 +19,7 @@ namespace Internal.Codebase
             GameEventBus.EndOfShift += SwitchJoystick;
             GameEventBus.EndOfShift += panelMover.MovePanel;
             GameEventBus.EndOfShift += player.Mover.StaminaSystem.ResetStamina;
+            GameEventBus.EndOfShift += safeBalance.UpdateSafeBalance;
         }
     
         private void OnDisable()
@@ -25,6 +27,7 @@ namespace Internal.Codebase
             GameEventBus.EndOfShift -= SwitchJoystick;
             GameEventBus.EndOfShift -= panelMover.MovePanel;
             GameEventBus.EndOfShift -= player.Mover.StaminaSystem.ResetStamina;
+            GameEventBus.EndOfShift -= safeBalance.UpdateSafeBalance;
         }
     
         private void Start()
