@@ -73,8 +73,8 @@ namespace Internal.Codebase
         public void SetIsTutorialCompleted(bool isCompleted) => 
             IsTutorialCompleted = isCompleted;
 
-        private void EndDialogue() =>
-            dialoguePanel.SetActive(false);
+        private void EndDialogue() => 
+            MovePanel();
 
         private void CompleteTutorial()
         {

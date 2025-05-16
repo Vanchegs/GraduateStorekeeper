@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="78afff7d-b5fc-473c-af12-c4e72c81acd2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SystemWorkShift.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SystemWorkShift.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/GarbageCanChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/GarbageCanChecker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Inventory/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Inventory/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/PlayerComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/PlayerComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Tutorial/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Tutorial/DialogueManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +186,9 @@
       <workItem from="1747150825809" duration="1367000" />
       <workItem from="1747227395467" duration="287000" />
       <workItem from="1747227785561" duration="234000" />
+      <workItem from="1747281844061" duration="1222000" />
+      <workItem from="1747283129800" duration="834000" />
+      <workItem from="1747314825435" duration="136000" />
     </task>
     <servers />
   </component>

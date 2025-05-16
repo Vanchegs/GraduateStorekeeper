@@ -1,4 +1,3 @@
-using UnityEngine;
 using System.Collections.Generic;
 using Internal.Codebase.Infrastructure;
 
@@ -30,7 +29,7 @@ namespace Internal.Codebase
             }
         }
 
-        public void IssueTheProduct()
+        public void ClearInventory()
         {
             inventoryList.Clear();
             GameEventBus.UpdateInventoryDisplay.Invoke();

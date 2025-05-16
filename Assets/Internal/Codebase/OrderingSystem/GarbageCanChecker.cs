@@ -10,7 +10,7 @@ namespace Internal.Codebase
             {
                 var player = other.GetComponent<PlayerComponent>();
                 if (player == null) return;
-                player.Inventory.IssueTheProduct();
+                player.Inventory.ClearInventory();
             }
         }
     }

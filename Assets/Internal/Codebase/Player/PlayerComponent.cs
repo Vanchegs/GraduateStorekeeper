@@ -1,3 +1,4 @@
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
 namespace Internal.Codebase
@@ -13,7 +14,7 @@ namespace Internal.Codebase
 
         public Inventory Inventory { get; private set; }
         public Wallet Wallet { get; private set; } = new();
-        
+
         private void Start()
         {
             sprite = GetComponent<SpriteRenderer>();
@@ -25,5 +26,8 @@ namespace Internal.Codebase
 
         private void FixedUpdate() => 
             Mover.MovementControl(sprite, animator);
+
+        public void ClearInventory() => 
+            Inventory.ClearInventory();
     }
 }
