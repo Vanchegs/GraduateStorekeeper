@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78afff7d-b5fc-473c-af12-c4e72c81acd2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/CompilerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/CompilerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/OrdersCompiler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/OrdersCompiler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/ShiftTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/ShiftTimer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +184,7 @@
       <workItem from="1747281844061" duration="1222000" />
       <workItem from="1747283129800" duration="834000" />
       <workItem from="1747314825435" duration="136000" />
-      <workItem from="1747379931450" duration="662000" />
+      <workItem from="1747379931450" duration="812000" />
     </task>
     <servers />
   </component>
