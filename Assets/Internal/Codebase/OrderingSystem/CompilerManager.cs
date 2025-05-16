@@ -6,9 +6,9 @@ public class CompilerManager : MonoBehaviour
 {
     [SerializeField] private List<OrdersCompiler> ordersCompilers;
 
-    public void NewShiftOrdering()
+    public void ResetOrders()
     {
         foreach (var ordComp in ordersCompilers) 
-            ordComp.StartOrderCreating();
+            ordComp.ResetOrder();
     }
 }

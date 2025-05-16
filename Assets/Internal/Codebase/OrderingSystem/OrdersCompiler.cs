@@ -36,8 +36,12 @@ namespace Internal.Codebase
         public void RecountingWaitingTime() => 
             waitingTime = Random.Range(5, 20);
 
-        public void StartOrderCreating() => 
-            StartCoroutine(CreateOrderWithDelay());
+        public void ResetOrder()
+        {
+            OrderComplete();
+            Order = new Order();
+            tableProductDisplay.DisplayOrder();
+        }
 
         private void OrderCreate()
         {
@@ -53,9 +57,6 @@ namespace Internal.Codebase
             
             tableProductDisplay.DisplayOrder();
         }
-
-        private void ResetOrder() => 
-            tableProductDisplay.DisplayOrder();
 
         private IEnumerator CreateOrderWithDelay()
         {
