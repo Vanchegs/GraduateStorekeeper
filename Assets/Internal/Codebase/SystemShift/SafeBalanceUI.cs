@@ -1,7 +1,6 @@
 using TMPro;
 using UnityEngine;
 
-
 namespace Internal.Codebase
 {
     public class SafeBalanceUI : MonoBehaviour
@@ -19,8 +18,10 @@ namespace Internal.Codebase
             
             safeBalanceText.text = SafeBalance.ToString();
 
-            if (SafeBalance >= moneyBar.TicketPrice) 
-                endGameButton.SetActive(true);
+            if (SafeBalance < moneyBar.TicketPrice) return;
+            endGameButton.SetActive(true);
+            Debug.Log(SafeBalance);
+            Debug.Log(moneyBar.TicketPrice);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Internal.Codebase
 
         private Wallet wallet;
 
-        public int TicketPrice { get; private set; }
+        public int TicketPrice { get; private set; } = 50000;
 
         private void OnEnable() => 
             GameEventBus.EndOfShift += UpdateUIBar;
