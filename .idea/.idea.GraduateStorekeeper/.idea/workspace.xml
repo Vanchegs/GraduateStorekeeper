@@ -6,10 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="78afff7d-b5fc-473c-af12-c4e72c81acd2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/WalletUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/WalletUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SystemWorkShift.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SystemWorkShift.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/AddsSystem/YandexMobileAdsBannerDemoScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/AddsSystem/YandexMobileAdsBannerDemoScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Wallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Player/Wallet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SaveSystem/SaveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SaveSystem/SaveData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SaveSystem/Saver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SaveSystem/Saver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/MoneyAccumulationBarUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/MoneyAccumulationBarUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SafeBalanceUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SafeBalanceUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/ShiftTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/ShiftTimer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/FinalShiftPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/FinalShiftPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +33,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Player/Inventory/InventoryDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/SaveSystem/SaveData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/SaveSystem/Saver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/EndGameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SafeBalanceUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/ShiftTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.9/Scripts/Runtime/TMP_MaterialManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -191,6 +199,7 @@
       <workItem from="1747314825435" duration="136000" />
       <workItem from="1747379931450" duration="1540000" />
       <workItem from="1747390358201" duration="3053000" />
+      <workItem from="1747539755659" duration="3228000" />
     </task>
     <servers />
   </component>

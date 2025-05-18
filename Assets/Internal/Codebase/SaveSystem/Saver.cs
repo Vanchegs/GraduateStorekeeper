@@ -6,6 +6,7 @@ public class Saver : MonoBehaviour
 {
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private PlayerComponent player;
+    [SerializeField] private EndGameController endGameController;
 
     private SaveData saveData;
     private Wallet wallet;
@@ -92,12 +93,14 @@ public class Saver : MonoBehaviour
     {
         wallet.SetSavedBalance(saveData.PlayerBalance);
         dialogueManager.SetIsTutorialCompleted(saveData.IsTutorialCompleted);
+        endGameController.SetIsGameEnd(saveData.IsGameEnd);
     }
 
     private void UpdateSaveData()
     {
         saveData.IsTutorialCompleted = dialogueManager.IsTutorialCompleted;
         saveData.PlayerBalance = wallet.PlayerBalance;
+        saveData.IsGameEnd = endGameController.IsGameEnd;
         Debug.Log($"Saving IsTutorialCompleted: {dialogueManager.IsTutorialCompleted}");
     }
 }

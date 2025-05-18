@@ -6,12 +6,12 @@ namespace Internal.Codebase
 {
     public class MoneyAccumulationBarUI : MonoBehaviour
     {
-        private const int TicketPrice = 50000;
-        
         [SerializeField] private Slider moneySlider;
         [SerializeField] private PlayerComponent player;
-    
+
         private Wallet wallet;
+
+        public int TicketPrice { get; private set; }
 
         private void OnEnable() => 
             GameEventBus.EndOfShift += UpdateUIBar;

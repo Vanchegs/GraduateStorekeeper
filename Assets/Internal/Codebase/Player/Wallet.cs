@@ -4,7 +4,7 @@ namespace Internal.Codebase
 {
     public class Wallet
     {
-        public int PlayerBalance { get; private set; }
+        public int PlayerBalance { get; private set; } = 50000;
         
         public void ChargeToWallet(int value)
         {

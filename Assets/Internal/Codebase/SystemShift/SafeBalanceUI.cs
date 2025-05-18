@@ -8,9 +8,20 @@ namespace Internal.Codebase
     {
         [SerializeField] private TMP_Text safeBalanceText;
         [SerializeField] private PlayerComponent playerComponent;
+        [SerializeField] private GameObject endGameButton;
+        [SerializeField] private MoneyAccumulationBarUI moneyBar;
 
-        public void UpdateSafeBalance() => 
-            safeBalanceText.text = playerComponent.Wallet.PlayerBalance.ToString();
+        public int SafeBalance { get; private set; }
+        
+        public void UpdateSafeBalance()
+        {
+            SafeBalance = playerComponent.Wallet.PlayerBalance;
+            
+            safeBalanceText.text = SafeBalance.ToString();
+
+            if (SafeBalance >= moneyBar.TicketPrice) 
+                endGameButton.SetActive(true);
+        }
     }
 }
 
