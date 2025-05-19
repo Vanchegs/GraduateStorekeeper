@@ -15,6 +15,8 @@ public class YandexMobileAdsInterstitialDemoScript : MonoBehaviour
         this.interstitialAdLoader = new InterstitialAdLoader();
         this.interstitialAdLoader.OnAdLoaded += this.HandleAdLoaded;
         this.interstitialAdLoader.OnAdFailedToLoad += this.HandleAdFailedToLoad;
+        
+        
     }
 
     public void OnGUI()
