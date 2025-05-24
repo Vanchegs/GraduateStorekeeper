@@ -459,6 +459,7 @@ GameObject:
   - component: {fileID: 378557852}
   - component: {fileID: 378557853}
   - component: {fileID: 378557855}
+  - component: {fileID: 378557856}
   - component: {fileID: 378557854}
   m_Layer: 0
   m_Name: System
@@ -523,6 +524,7 @@ MonoBehaviour:
   player: {fileID: 2108783531}
   joystick: {fileID: 611559263}
   playerSpawnPoint: {fileID: 354092527}
+  adController: {fileID: 378557856}
 --- !u!114 &378557852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,6 +682,18 @@ MonoBehaviour:
   safeAndTicketGroup: {fileID: 1926832962}
   endGamePanel: {fileID: 1926832961}
   safe: {fileID: 145363604}
+--- !u!114 &378557856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378557847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e223e8a0b83461d4888af54dd92d2445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

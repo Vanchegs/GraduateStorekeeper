@@ -6,7 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="78afff7d-b5fc-473c-af12-c4e72c81acd2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GraduateStorekeeper/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/AddsSystem/InterstitialAddController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/AddsSystem/InterstitialAddController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/AddsSystem/InterstitialAddController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/AddsSystem/InterstitialAddController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/CompilerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/CompilerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/InventoryChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/InventoryChecker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/ProductDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/ProductDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/ShiftTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/ShiftTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SystemWorkShift.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/SystemShift/SystemWorkShift.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Sprites/pre.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Sprites/pre.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +26,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/AddsSystem/InterstitialAdController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/DrinksMachine/DrinksMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/CompilerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/OrderingSystem/ProductsType.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,7 +76,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\Unity 2022.3.35f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\GitHub\GraduateStorekeeper -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\GitHub\GraduateStorekeeper" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -74,7 +84,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\Unity 2022.3.35f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\GitHub\GraduateStorekeeper -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\GitHub\GraduateStorekeeper" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -192,6 +202,9 @@
       <workItem from="1747539755659" duration="4907000" />
       <workItem from="1747585517373" duration="790000" />
       <workItem from="1747643602313" duration="134000" />
+      <workItem from="1747645256540" duration="15000" />
+      <workItem from="1747720250508" duration="2168000" />
+      <workItem from="1748102948185" duration="97000" />
     </task>
     <servers />
   </component>

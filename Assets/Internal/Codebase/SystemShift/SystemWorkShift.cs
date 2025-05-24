@@ -11,6 +11,7 @@ namespace Internal.Codebase
         [SerializeField] private PlayerComponent player;
         [SerializeField] private Joystick joystick;
         [SerializeField] private Transform playerSpawnPoint;
+        [SerializeField] private InterstitialAdController adController;
         
         public ShiftTimer ShiftTimer { get; private set; }
     
@@ -20,6 +21,7 @@ namespace Internal.Codebase
             GameEventBus.EndOfShift += panelMover.MovePanel;
             GameEventBus.EndOfShift += player.Mover.StaminaSystem.ResetStamina;
             GameEventBus.EndOfShift += safeBalance.UpdateSafeBalance;
+            GameEventBus.EndOfShift += adController.ShowInterstitial;
         }
     
         private void OnDisable()
@@ -28,6 +30,7 @@ namespace Internal.Codebase
             GameEventBus.EndOfShift -= panelMover.MovePanel;
             GameEventBus.EndOfShift -= player.Mover.StaminaSystem.ResetStamina;
             GameEventBus.EndOfShift -= safeBalance.UpdateSafeBalance;
+            GameEventBus.EndOfShift -= adController.ShowInterstitial;
         }
     
         private void Start()

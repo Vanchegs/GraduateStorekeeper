@@ -1,14 +1,17 @@
 using System.Collections.Generic;
-using Internal.Codebase;
 using UnityEngine;
 
-public class CompilerManager : MonoBehaviour
+namespace Internal.Codebase
 {
-    [SerializeField] private List<OrdersCompiler> ordersCompilers;
-
-    public void ResetOrders()
+    public class CompilerManager : MonoBehaviour
     {
-        foreach (var ordComp in ordersCompilers) 
-            ordComp.ResetOrder();
+        [SerializeField] private List<OrdersCompiler> ordersCompilers;
+    
+        public void ResetOrders()
+        {
+            foreach (var ordComp in ordersCompilers) 
+                ordComp.ResetOrder();
+        }
     }
 }
+

@@ -3,7 +3,7 @@ using UnityEngine;
 using YandexMobileAds;
 using YandexMobileAds.Base;
 
-public class YandexMobileAdsInterstitialDemoScript : MonoBehaviour
+public class InterstitialAdController : MonoBehaviour
 {
     private String message = "";
 
@@ -16,7 +16,7 @@ public class YandexMobileAdsInterstitialDemoScript : MonoBehaviour
         this.interstitialAdLoader.OnAdLoaded += this.HandleAdLoaded;
         this.interstitialAdLoader.OnAdFailedToLoad += this.HandleAdFailedToLoad;
         
-        
+        RequestInterstitial();
     }
 
     public void OnGUI()
@@ -56,6 +56,23 @@ public class YandexMobileAdsInterstitialDemoScript : MonoBehaviour
         GUILayout.Label(this.message, labelStyle);
     }
 
+    public void ShowInterstitial()
+    {
+        if (this.interstitial == null)
+        {
+            this.DisplayMessage("Interstitial is not ready yet");
+            return;
+        }
+
+        this.interstitial.OnAdClicked += this.HandleAdClicked;
+        this.interstitial.OnAdShown += this.HandleAdShown;
+        this.interstitial.OnAdFailedToShow += this.HandleAdFailedToShow;
+        this.interstitial.OnAdImpression += this.HandleImpression;
+        this.interstitial.OnAdDismissed += this.HandleAdDismissed;
+
+        this.interstitial.Show();
+    }
+
     private void RequestInterstitial()
     {
         //Sets COPPA restriction for user age under 13
@@ -71,23 +88,6 @@ public class YandexMobileAdsInterstitialDemoScript : MonoBehaviour
 
         this.interstitialAdLoader.LoadAd(this.CreateAdRequest(adUnitId));
         this.DisplayMessage("Interstitial is requested");
-    }
-
-    private void ShowInterstitial()
-    {
-        if (this.interstitial == null)
-        {
-            this.DisplayMessage("Interstitial is not ready yet");
-            return;
-        }
-
-        this.interstitial.OnAdClicked += this.HandleAdClicked;
-        this.interstitial.OnAdShown += this.HandleAdShown;
-        this.interstitial.OnAdFailedToShow += this.HandleAdFailedToShow;
-        this.interstitial.OnAdImpression += this.HandleImpression;
-        this.interstitial.OnAdDismissed += this.HandleAdDismissed;
-
-        this.interstitial.Show();
     }
 
     private AdRequestConfiguration CreateAdRequest(string adUnitId)
