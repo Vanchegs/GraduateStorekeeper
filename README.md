@@ -15,4 +15,3 @@
 Движок: Unity 2022.3.35f1
 Язык: C#
 Платформа: Android (minSdkVersion 24)
-Размер: ~50 MB
